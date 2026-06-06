@@ -92,7 +92,7 @@ export default function AboutMe() {
               {/* Decorative Elements */}
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-card border border-card-border rounded-xl p-3 shadow-lg rotate-12 hover:rotate-0 transition-transform duration-300">
                 <div className="w-full h-full border-2 border-dashed border-accent/50 rounded-lg flex items-center justify-center flex-col">
-                  <span className="text-accent font-bold text-xl">3+</span>
+                  <span className="text-accent font-bold text-xl">1+</span>
                   <span className="text-xs text-text-secondary font-mono">Years</span>
                 </div>
               </div>
