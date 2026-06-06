@@ -1,0 +1,77 @@
+[
+  {
+    "id": "proj-1",
+    "title": "agentic-stock-reporter",
+    "category": "AI Agent",
+    "description": "An agentic system to report and analyze stock market data.",
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/agentic-stock-reporter",
+    "techStack": [
+      { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
+    ]
+  },
+  {
+    "id": "proj-2",
+    "title": "get-shopee-price",
+    "category": "Data Crawling",
+    "description": "A script to extract and monitor product prices from Shopee.",
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/get-shopee-price",
+    "techStack": [
+      { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
+    ]
+  },
+  {
+    "id": "proj-3",
+    "title": "cmc-historical-scraper",
+    "category": "Data Crawling",
+    "description": "A tool to scrape historical cryptocurrency data from CoinMarketCap.",
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/cmc-historical-scraper",
+    "techStack": [
+      { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
+    ]
+  },
+  {
+    "id": "proj-4",
+    "title": "imexpharm-valuation-model",
+    "category": "Financial Analysis",
+    "description": "Conducted an in-depth financial analysis and estimated future growth potential using Advanced Excel and the Discounted Cash Flow (DCF) method under various market scenarios.",
+    "stars": 12,
+    "forks": 3,
+    "githubUrl": "",
+    "techStack": [
+      { "name": "Excel", "color": "text-green-500", "bg": "bg-green-500/10" },
+      { "name": "Financial Modeling", "color": "text-blue-400", "bg": "bg-blue-400/10" }
+    ]
+  },
+  {
+    "id": "proj-5",
+    "title": "determinants-of-banking-profitability",
+    "category": "Econometrics",
+    "description": "Analyzed the impact of internal and macroeconomic factors on bank profitability (ROA) using FGLS regression on a quarterly 15-year dataset of 27 commercial banks in Vietnam.",
+    "stars": 8,
+    "forks": 2,
+    "githubUrl": "",
+    "techStack": [
+      { "name": "Python", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
+      { "name": "Statsmodels", "color": "text-blue-500", "bg": "bg-blue-500/10" }
+    ]
+  },
+  {
+    "id": "proj-6",
+    "title": "macro-variables-gdp-per-capita",
+    "category": "Econometrics",
+    "description": "Analyzed the long-term impact of key macroeconomic variables on Australia's GDP per capita using econometric modeling and time-series data.",
+    "stars": 15,
+    "forks": 4,
+    "githubUrl": "",
+    "techStack": [
+      { "name": "Python", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
+      { "name": "Time-Series", "color": "text-purple-400", "bg": "bg-purple-400/10" }
+    ]
+  }
+]
