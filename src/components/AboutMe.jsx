@@ -74,7 +74,7 @@ export default function AboutMe() {
               {/* Profile Image Container */}
               <div className="relative w-full h-full rounded-[2rem] border-2 border-card-border overflow-hidden bg-card shadow-2xl group">
                 <img
-                  src="/src/assets/avatar/profile.jpg"
+                  src="/avatar/profile.jpg"
                   alt="Nguyen Phuoc Bao Tri"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

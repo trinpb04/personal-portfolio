@@ -6,7 +6,7 @@
     "date": "May 25, 2026",
     "grade": "92.80%",
     "url": "https://coursera.org/share/ac357ab7782cab54c34029a297a0c181",
-    "image": "/src/assets/certificates/excel_cognos.jpg",
+    "image": "/certificates/excel_cognos.jpg",
     "skills": [
       "Create basic visualizations such as line graphs, bar graphs, and pie charts using Excel spreadsheets.",
       "Construct advanced charts and visualizations such as Treemaps, Sparklines, Histogram, Scatter Plots, and Filled Map Charts.",
@@ -21,7 +21,7 @@
     "date": "August 18, 2025",
     "grade": "Passed",
     "url": "https://chungchinganhan.ueh.edu.vn/temp/ChungChi_1811287_20260606_1038.pdf",
-    "image": "/src/assets/certificates/atd_ueh_excel.jpg",
+    "image": "/certificates/atd_ueh_excel.jpg",
     "skills": [
       "Data Aggregation and Cleaning",
       "Advanced Data Analysis in Excel",

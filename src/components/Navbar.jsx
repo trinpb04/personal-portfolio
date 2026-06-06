@@ -24,7 +24,7 @@ export default function Navbar({ theme, setTheme }) {
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center gap-2 group h-16 md:h-20 py-2">
               <img 
-                src={theme === 'dark' ? "/src/assets/logo-dark.png" : "/src/assets/logo-light.png"} 
+                src={theme === 'dark' ? "/logo-dark.png" : "/logo-light.png"} 
                 alt="Tri Nguyen Logo" 
                 className="h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
