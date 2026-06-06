@@ -1,0 +1,38 @@
+name: Daily Repos Update
+
+on:
+  schedule:
+    - cron: '30 2,14,20 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-repos-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run update_repos.py
+        run: python update_repos.py
+
+      - name: Check if there are any changes
+        id: git-check
+        run: |
+          git diff --exit-code src/data/projects.json || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/projects.json
+          git commit -m "chore(auto): daily update github project stats"
+          git push
