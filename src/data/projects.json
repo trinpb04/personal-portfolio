@@ -2,11 +2,15 @@
   {
     "id": "proj-1",
     "title": "agentic-stock-reporter",
-    "category": "AI Agent",
-    "description": "An agentic system to report and analyze stock market data.",
+    "categoryKey": "ai-agent",
+    "description": {
+      "en": "An agentic system to report and analyze stock market data.",
+      "vi": "Hệ thống agentic tự động lập báo cáo và phân tích dữ liệu thị trường chứng khoán."
+    },
     "stars": 0,
     "forks": 0,
     "githubUrl": "https://github.com/trinpb04/agentic-stock-reporter",
+    "reportUrl": "",
     "techStack": [
       { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
     ]
@@ -14,11 +18,15 @@
   {
     "id": "proj-2",
     "title": "get-shopee-price",
-    "category": "Data Crawling",
-    "description": "A script to extract and monitor product prices from Shopee.",
+    "categoryKey": "data-crawling",
+    "description": {
+      "en": "A script to extract and monitor product prices from Shopee.",
+      "vi": "Script trích xuất và theo dõi biến động giá sản phẩm trên Shopee."
+    },
     "stars": 0,
     "forks": 0,
     "githubUrl": "https://github.com/trinpb04/get-shopee-price",
+    "reportUrl": "",
     "techStack": [
       { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
     ]
@@ -26,11 +34,15 @@
   {
     "id": "proj-3",
     "title": "cmc-historical-scraper",
-    "category": "Data Crawling",
-    "description": "A tool to scrape historical cryptocurrency data from CoinMarketCap.",
+    "categoryKey": "data-crawling",
+    "description": {
+      "en": "A tool to scrape historical cryptocurrency data from CoinMarketCap.",
+      "vi": "Công cụ thu thập dữ liệu lịch sử tiền mã hóa từ CoinMarketCap."
+    },
     "stars": 0,
     "forks": 0,
     "githubUrl": "https://github.com/trinpb04/cmc-historical-scraper",
+    "reportUrl": "",
     "techStack": [
       { "name": "Python", "color": "text-blue-500", "bg": "bg-blue-500/10" }
     ]
@@ -38,11 +50,16 @@
   {
     "id": "proj-4",
     "title": "imexpharm-valuation-model",
-    "category": "Financial Analysis",
-    "description": "Conducted an in-depth financial analysis and estimated future growth potential using Advanced Excel and the Discounted Cash Flow (DCF) method under various market scenarios.",
-    "stars": 12,
-    "forks": 3,
+    "categoryKey": "financial-analysis",
+    "description": {
+      "en": "In-depth financial analysis estimating future growth potential using Advanced Excel and the Discounted Cash Flow (DCF) method under multiple market scenarios.",
+      "vi": "Phân tích tài chính chuyên sâu, ước lượng tiềm năng tăng trưởng bằng Excel nâng cao và phương pháp Chiết khấu Dòng tiền (DCF) theo nhiều kịch bản thị trường."
+    },
+    "stars": 0,
+    "forks": 0,
     "githubUrl": "",
+    "reportUrl": "",
+    "chart": [10, 12, 11, 14, 16, 19, 23, 28],
     "techStack": [
       { "name": "Excel", "color": "text-green-500", "bg": "bg-green-500/10" },
       { "name": "Financial Modeling", "color": "text-blue-400", "bg": "bg-blue-400/10" }
@@ -51,11 +68,16 @@
   {
     "id": "proj-5",
     "title": "determinants-of-banking-profitability",
-    "category": "Econometrics",
-    "description": "Analyzed the impact of internal and macroeconomic factors on bank profitability (ROA) using FGLS regression on a quarterly 15-year dataset of 27 commercial banks in Vietnam.",
-    "stars": 8,
-    "forks": 2,
+    "categoryKey": "econometrics",
+    "description": {
+      "en": "Analyzed the impact of internal and macroeconomic factors on bank profitability (ROA) using FGLS regression on a quarterly 15-year dataset of 27 commercial banks in Vietnam.",
+      "vi": "Phân tích tác động của các yếu tố nội tại và vĩ mô lên khả năng sinh lời (ROA) của ngân hàng bằng hồi quy FGLS trên bộ dữ liệu quý 15 năm của 27 NHTM Việt Nam."
+    },
+    "stars": 0,
+    "forks": 0,
     "githubUrl": "",
+    "reportUrl": "",
+    "chart": [14, 12, 15, 13, 16, 15, 18, 17],
     "techStack": [
       { "name": "Python", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
       { "name": "Statsmodels", "color": "text-blue-500", "bg": "bg-blue-500/10" }
@@ -64,11 +86,16 @@
   {
     "id": "proj-6",
     "title": "macro-variables-gdp-per-capita",
-    "category": "Econometrics",
-    "description": "Analyzed the long-term impact of key macroeconomic variables on Australia's GDP per capita using econometric modeling and time-series data.",
-    "stars": 15,
-    "forks": 4,
+    "categoryKey": "econometrics",
+    "description": {
+      "en": "Analyzed the long-term impact of key macroeconomic variables on Australia's GDP per capita using econometric modeling and time-series data.",
+      "vi": "Phân tích tác động dài hạn của các biến vĩ mô trọng yếu lên GDP bình quân đầu người của Úc bằng mô hình kinh tế lượng và dữ liệu chuỗi thời gian."
+    },
+    "stars": 0,
+    "forks": 0,
     "githubUrl": "",
+    "reportUrl": "",
+    "chart": [20, 21, 23, 24, 26, 29, 31, 34],
     "techStack": [
       { "name": "Python", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
       { "name": "Time-Series", "color": "text-purple-400", "bg": "bg-purple-400/10" }

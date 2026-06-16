@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Raw, UNREDACTED dashboard screenshots (contain confidential client data) — never commit
+raw-dashboards

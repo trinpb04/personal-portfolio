@@ -1,32 +1,54 @@
 [
   {
     "id": "cert-1",
-    "name": "Data Visualization and Dashboards with Excel and Cognos",
+    "name": {
+      "en": "Data Visualization and Dashboards with Excel and Cognos",
+      "vi": "Trực quan hóa Dữ liệu & Dashboard với Excel và Cognos"
+    },
     "issuer": "IBM",
     "date": "May 25, 2026",
     "grade": "92.80%",
     "url": "https://coursera.org/share/ac357ab7782cab54c34029a297a0c181",
     "image": "/certificates/excel_cognos.jpg",
-    "skills": [
-      "Create basic visualizations such as line graphs, bar graphs, and pie charts using Excel spreadsheets.",
-      "Construct advanced charts and visualizations such as Treemaps, Sparklines, Histogram, Scatter Plots, and Filled Map Charts.",
-      "Explain the important role charts play in telling a data-driven story.",
-      "Build and share interactive dashboards using Excel and Cognos Analytics."
-    ]
+    "skills": {
+      "en": [
+        "Create basic visualizations such as line graphs, bar graphs, and pie charts using Excel spreadsheets.",
+        "Construct advanced charts and visualizations such as Treemaps, Sparklines, Histogram, Scatter Plots, and Filled Map Charts.",
+        "Explain the important role charts play in telling a data-driven story.",
+        "Build and share interactive dashboards using Excel and Cognos Analytics."
+      ],
+      "vi": [
+        "Tạo các biểu đồ cơ bản như đường, cột và tròn bằng bảng tính Excel.",
+        "Xây dựng biểu đồ nâng cao: Treemap, Sparkline, Histogram, Scatter Plot và Filled Map Chart.",
+        "Hiểu vai trò của biểu đồ trong việc kể câu chuyện dựa trên dữ liệu.",
+        "Xây dựng và chia sẻ dashboard tương tác bằng Excel và Cognos Analytics."
+      ]
+    }
   },
   {
     "id": "cert-2",
-    "name": "Tổng hợp và Phân tích dữ liệu bằng Excel",
+    "name": {
+      "en": "Data Aggregation and Analysis with Excel",
+      "vi": "Tổng hợp và Phân tích dữ liệu bằng Excel"
+    },
     "issuer": "Đại học Kinh tế TP.HCM (UEH)",
     "date": "August 18, 2025",
     "grade": "Passed",
     "url": "https://chungchinganhan.ueh.edu.vn/temp/ChungChi_1811287_20260606_1038.pdf",
     "image": "/certificates/atd_ueh_excel.jpg",
-    "skills": [
-      "Data Aggregation and Cleaning",
-      "Advanced Data Analysis in Excel",
-      "Pivot Tables & Pivot Charts",
-      "Financial & Statistical Functions"
-    ]
+    "skills": {
+      "en": [
+        "Data Aggregation and Cleaning",
+        "Advanced Data Analysis in Excel",
+        "Pivot Tables & Pivot Charts",
+        "Financial & Statistical Functions"
+      ],
+      "vi": [
+        "Tổng hợp và làm sạch dữ liệu",
+        "Phân tích dữ liệu nâng cao trong Excel",
+        "Pivot Table & Pivot Chart",
+        "Hàm tài chính & thống kê"
+      ]
+    }
   }
 ]

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export default function AboutMe() {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="pt-32 pb-16 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -18,14 +21,14 @@ export default function AboutMe() {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <h2 className="text-accent text-sm font-bold tracking-widest uppercase mb-3 font-mono">
-                Applied Finance & Data Analytics
+                {t.about.eyebrow}
               </h2>
               <h1 className="text-5xl md:text-7xl font-extrabold text-primary mb-6 leading-tight">
                 Nguyen Phuoc <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-500">Bao Tri</span>
               </h1>
               <p className="text-lg text-text-secondary mb-8 max-w-lg leading-relaxed">
-                Leveraging a solid background in Applied Finance and Data Analytics to build integrated financial models, automate management reporting, and deliver actionable insights that drive strategic business decisions.
+                {t.about.bio}
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8 items-center">
@@ -33,7 +36,7 @@ export default function AboutMe() {
                   href="#projects"
                   className="flex items-center gap-2 px-6 py-3 bg-accent text-white font-bold rounded-lg hover:bg-accent/90 transition-all shadow-sm"
                 >
-                  EXPLORE WORK <ArrowRight size={18} />
+                  {t.about.exploreWork} <ArrowRight size={18} />
                 </a>
                 <a
                   href="https://github.com/trinpb04"
@@ -42,7 +45,7 @@ export default function AboutMe() {
                   className="flex items-center gap-2 px-5 py-3 bg-card border border-card-border rounded-lg hover:border-accent hover:text-accent transition-all shadow-sm"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                  <span className="font-medium underline decoration-text-secondary/30 underline-offset-4">Source Code</span>
+                  <span className="font-medium underline decoration-text-secondary/30 underline-offset-4">{t.about.sourceCode}</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/trinpb04"
@@ -51,13 +54,13 @@ export default function AboutMe() {
                   className="flex items-center gap-2 px-5 py-3 bg-card border border-card-border rounded-lg hover:border-accent hover:text-accent transition-all shadow-sm"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  <span className="font-medium underline decoration-text-secondary/30 underline-offset-4">LinkedIn</span>
+                  <span className="font-medium underline decoration-text-secondary/30 underline-offset-4">{t.about.linkedin}</span>
                 </a>
               </div>
 
               <div className="flex items-center gap-3 text-text-secondary">
                 <MapPin size={18} className="text-accent" />
-                <span className="font-mono text-sm tracking-wide">Ho Chi Minh City, Vietnam // 10.7626° N, 106.6602° E</span>
+                <span className="font-mono text-sm tracking-wide">{t.about.location}</span>
               </div>
             </motion.div>
           </div>
@@ -78,22 +81,13 @@ export default function AboutMe() {
                   alt="Nguyen Phuoc Bao Tri"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
-                {/* Instruction Overlay (User can remove this once image is added) */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-center px-4 font-medium">
-                    Replace with your photo in:<br />
-                    <span className="font-mono text-xs text-accent">src/assets/avatar/profile.jpg</span><br />
-                    and update AboutMe.jsx
-                  </p>
-                </div>
               </div>
 
               {/* Decorative Elements */}
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-card border border-card-border rounded-xl p-3 shadow-lg rotate-12 hover:rotate-0 transition-transform duration-300">
                 <div className="w-full h-full border-2 border-dashed border-accent/50 rounded-lg flex items-center justify-center flex-col">
                   <span className="text-accent font-bold text-xl">1+</span>
-                  <span className="text-xs text-text-secondary font-mono">Years</span>
+                  <span className="text-xs text-text-secondary font-mono">{t.about.yearsBadge}</span>
                 </div>
               </div>
             </div>

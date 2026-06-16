@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, ArrowUp } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center justify-center gap-3">
             <Send className="text-accent" size={32} />
-            Get In Touch
+            {t.contact.title}
           </h2>
-          <p className="text-text-secondary">Open for new opportunities in Data Analytics and Finance.</p>
+          <p className="text-text-secondary">{t.contact.subtitle}</p>
         </div>
 
         <div className="bento-card max-w-2xl mx-auto">
@@ -20,8 +23,8 @@ export function Contact() {
                 <Mail size={24} />
               </div>
               <div>
-                <p className="text-sm text-text-secondary font-medium">Email</p>
-                <a href="mailto:nguyenphuocbaotri.128@gmail.com" className="text-primary font-medium hover:text-accent transition-colors">
+                <p className="text-sm text-text-secondary font-medium">{t.contact.emailLabel}</p>
+                <a href="mailto:nguyenphuocbaotri.128@gmail.com" className="text-primary font-medium hover:text-accent transition-colors break-all">
                   nguyenphuocbaotri.128@gmail.com
                 </a>
               </div>
@@ -32,7 +35,7 @@ export function Contact() {
                 <Phone size={24} />
               </div>
               <div>
-                <p className="text-sm text-text-secondary font-medium">Phone</p>
+                <p className="text-sm text-text-secondary font-medium">{t.contact.phoneLabel}</p>
                 <a href="tel:+84938113132" className="text-primary font-medium hover:text-green-500 transition-colors">
                   (+84) 938 113 132
                 </a>
@@ -44,8 +47,8 @@ export function Contact() {
                 <MapPin size={24} />
               </div>
               <div>
-                <p className="text-sm text-text-secondary font-medium">Location</p>
-                <p className="text-primary font-medium">Ho Chi Minh City, Vietnam</p>
+                <p className="text-sm text-text-secondary font-medium">{t.contact.locationLabel}</p>
+                <p className="text-primary font-medium">{t.contact.locationValue}</p>
               </div>
             </div>
           </div>
