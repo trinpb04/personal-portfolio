@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Star, GitFork, ExternalLink, FileText, GraduationCap } from 'lucide-react';
+import { Database, Star, GitFork, ExternalLink, FileText, GraduationCap, Rocket } from 'lucide-react';
 import { AreaChart, Area, ResponsiveContainer } from 'recharts';
 import projectData from '../data/projects.json';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -138,15 +138,20 @@ export default function Projects() {
                     {project.description[lang]}
                   </p>
 
-                  {/* Live demo link (shown when a deployed URL exists) */}
+                  {/* Live web app button (shown when a deployed URL exists) */}
                   {hasLive && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline mb-4 w-fit"
+                      className="group/btn inline-flex items-center gap-2 px-4 py-2.5 mb-4 w-fit rounded-lg bg-accent text-white font-bold text-sm shadow-sm hover:bg-accent/90 hover:shadow-md hover:-translate-y-0.5 transition-all"
                     >
-                      <ExternalLink size={15} /> {t.projects.liveDemo}
+                      <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-white/70 opacity-75 animate-ping"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                      </span>
+                      <Rocket size={16} /> {t.projects.liveDemo}
+                      <ExternalLink size={14} className="opacity-70 group-hover/btn:translate-x-0.5 transition-transform" />
                     </a>
                   )}
 
