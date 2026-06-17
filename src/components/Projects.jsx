@@ -80,6 +80,7 @@ export default function Projects() {
             {filteredProjects.map((project) => {
               const hasRepo = Boolean(project.githubUrl);
               const hasReport = Boolean(project.reportUrl);
+              const hasLive = Boolean(project.liveUrl);
               return (
                 <motion.div
                   key={project.id}
@@ -133,9 +134,21 @@ export default function Projects() {
                   {/* Decorative trend sparkline (only when chart data is present) */}
                   {Array.isArray(project.chart) && <Sparkline values={project.chart} />}
 
-                  <p className="text-sm text-text-secondary mb-6 flex-grow leading-relaxed">
+                  <p className="text-sm text-text-secondary mb-4 flex-grow leading-relaxed">
                     {project.description[lang]}
                   </p>
+
+                  {/* Live demo link (shown when a deployed URL exists) */}
+                  {hasLive && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline mb-4 w-fit"
+                    >
+                      <ExternalLink size={15} /> {t.projects.liveDemo}
+                    </a>
+                  )}
 
                   {/* Report link for academic projects (shown only when a link exists) */}
                   {!hasRepo && hasReport && (

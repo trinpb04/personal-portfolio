@@ -1,5 +1,25 @@
 [
   {
+    "id": "proj-academy",
+    "title": "data-analyst-academy",
+    "categoryKey": "learning-platform",
+    "description": {
+      "en": "An interactive, encyclopedia-style learning platform for Data Analytics. Visualizes interconnected topics (SQL, Python, Statistics, Power BI, Business Acumen) as a physics-based force-directed knowledge graph — pan, zoom and click nodes to explore. Built as an installable PWA with dual light/dark themes.",
+      "vi": "Nền tảng học Data Analytics tương tác dạng bách khoa. Trực quan hóa các chủ đề liên kết (SQL, Python, Thống kê, Power BI, Business Acumen) bằng force-directed knowledge graph dựa trên vật lý — kéo, zoom, click vào node để khám phá. Xây dựng dưới dạng PWA cài đặt được, hỗ trợ giao diện sáng/tối."
+    },
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/data-analyst-academy",
+    "liveUrl": "https://trinpb04.github.io/data-analyst-academy/",
+    "reportUrl": "",
+    "techStack": [
+      { "name": "React", "color": "text-blue-400", "bg": "bg-blue-400/10" },
+      { "name": "Vite", "color": "text-purple-400", "bg": "bg-purple-400/10" },
+      { "name": "D3 Force Graph", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
+      { "name": "PWA", "color": "text-green-500", "bg": "bg-green-500/10" }
+    ]
+  },
+  {
     "id": "proj-1",
     "title": "agentic-stock-reporter",
     "categoryKey": "ai-agent",
