@@ -27,7 +27,7 @@
     }
   },
   {
-    "id": "cert-cognos",
+    "id": "cert-Data-Visualization",
     "name": {
       "en": "Data Visualization and Dashboards with Excel and Cognos",
       "vi": "Trực quan hóa Dữ liệu & Dashboard với Excel và Cognos"
@@ -37,7 +37,7 @@
     "date": "May 25, 2026",
     "grade": "92.80%",
     "url": "https://coursera.org/verify/IICH5JRDRWYI",
-    "image": "/certificates/excel_cognos.jpg",
+    "image": "/certificates/Data Visualization.jpg",
     "skills": {
       "en": [
         "Create basic visualizations such as line graphs, bar graphs, and pie charts using Excel spreadsheets.",
