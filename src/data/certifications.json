@@ -2,6 +2,32 @@
   {
     "id": "cert-1",
     "name": {
+      "en": "Python for Data Science, AI & Development"
+      "vi": "Python cho Khoa học Dữ liệu, AI & Phát triển"
+    },
+    "issuer": "IBM",
+    "date": "May 25, 2026",
+    "grade": "93.75%",
+    "url": "https://coursera.org/share/28190add2b8f519dca70974bc0dbccc3",
+    "image": "/certificates/Python for Data Science, AI & Development.jpg",
+    "skills": {
+      "en": [
+        "Develop foundational Python programming skills including syntax, data types, variables, and string operations.",
+        "Demonstrate proficiency in Pandas and NumPy, and develop code using Jupyter Notebooks.",
+        "Apply Python programming logic using data structures, conditions, loops, functions, exception handling, and classes.",
+        "Access and extract web-based data using REST APIs with requests and BeautifulSoup."
+      ],
+      "vi": [
+        "Nắm vững nền tảng Python: cú pháp, kiểu dữ liệu, biến và thao tác chuỗi.",
+        "Thành thạo Pandas và NumPy, phát triển code trên Jupyter NoteBooks.",
+        "Áp dụng logic Python: cấu trúc dữ liệu, điều kiện, vòng lặp, hàm, xử lý ngoại lệ và OOP.",
+        "Thu thập và trích xuất dữ liệu web qua REST API bằng requests và BeautifulSoup."
+      ]
+    }
+  },
+  {
+    "id": "cert-2",
+    "name": {
       "en": "Data Visualization and Dashboards with Excel and Cognos",
       "vi": "Trực quan hóa Dữ liệu & Dashboard với Excel và Cognos"
     },
@@ -26,7 +52,7 @@
     }
   },
   {
-    "id": "cert-2",
+    "id": "cert-3",
     "name": {
       "en": "Data Aggregation and Analysis with Excel",
       "vi": "Tổng hợp và Phân tích dữ liệu bằng Excel"
