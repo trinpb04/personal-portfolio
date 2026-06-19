@@ -67,13 +67,13 @@ export default function Certifications() {
               )}
 
               <div className="p-6 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-6">
+                <div className="flex justify-between items-start mb-4 gap-3">
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-1">{cert.name[lang]}</h3>
-                    <p className="text-accent font-medium mb-2">{cert.issuer}</p>
-                    <div className="flex gap-4 text-xs font-mono text-text-secondary">
-                      <span>{t.certifications.issued}: {cert.date}</span>
-                      <span>{t.certifications.grade}: {cert.grade}</span>
+                    <h3 className="text-lg font-bold text-primary mb-1 leading-snug">{cert.name[lang]}</h3>
+                    <p className="text-accent text-sm font-medium mb-3">{cert.issuer}</p>
+                    <div className="flex flex-wrap gap-2 text-xs font-mono">
+                      <span className="px-2 py-0.5 rounded-full bg-bg border border-card-border text-text-secondary">{cert.date}</span>
+                      <span className="px-2 py-0.5 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold">{cert.grade}</span>
                     </div>
                   </div>
                   <a
@@ -87,9 +87,9 @@ export default function Certifications() {
                   </a>
                 </div>
 
-                <div className="mt-auto">
+                <div className="pt-4 border-t border-card-border">
                   <h4 className="text-sm font-semibold text-primary mb-3">{t.certifications.skillsAcquired}</h4>
-                  <ul className="grid sm:grid-cols-2 gap-3">
+                  <ul className="grid grid-cols-1 gap-2.5">
                     {cert.skills[lang].map((skill, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-text-secondary">
                         <CheckCircle2 size={16} className="text-green-500 mt-0.5 shrink-0" />
