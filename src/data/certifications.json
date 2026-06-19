@@ -5,6 +5,7 @@
       "en": "Python for Data Science, AI & Development",
       "vi": "Python cho Khoa học Dữ liệu, AI & Phát triển"
     },
+    "category": "data-science",
     "issuer": "IBM",
     "date": "May 25, 2026",
     "grade": "93.75%",
@@ -31,6 +32,7 @@
       "en": "Data Visualization and Dashboards with Excel and Cognos",
       "vi": "Trực quan hóa Dữ liệu & Dashboard với Excel và Cognos"
     },
+    "category": "data-analysis",
     "issuer": "IBM",
     "date": "May 25, 2026",
     "grade": "92.80%",
@@ -57,6 +59,7 @@
       "en": "Data Aggregation and Analysis with Excel",
       "vi": "Tổng hợp và Phân tích dữ liệu bằng Excel"
     },
+    "category": "data-analysis",
     "issuer": "Đại học Kinh tế TP.HCM (UEH)",
     "date": "August 18, 2025",
     "grade": "Passed",

@@ -1,10 +1,19 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Award, ExternalLink, CheckCircle2 } from 'lucide-react';
 import certData from '../data/certifications.json';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function Certifications() {
   const { lang, t } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState('all');
+
+  const catLabel = (key) => t.certifications.categories?.[key] || key;
+  const categoryKeys = ['all', ...new Set(certData.map((c) => c.category))];
+
+  const filteredCerts = activeCategory === 'all'
+    ? certData
+    : certData.filter((c) => c.category === activeCategory);
 
   return (
     <section id="certifications" className="py-20 relative">
@@ -17,16 +26,35 @@ export default function Certifications() {
           <div className="h-1 w-20 bg-accent rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {certData.map((cert, idx) => (
-            <motion.div
-              key={cert.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="bento-card flex flex-col p-0 overflow-hidden"
+        {/* Category Slicers */}
+        <div className="flex flex-wrap gap-3 mb-10">
+          {categoryKeys.map((key) => (
+            <button
+              key={key}
+              onClick={() => setActiveCategory(key)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                activeCategory === key
+                  ? 'bg-accent/20 text-accent border border-accent/50'
+                  : 'bg-card border border-card-border text-text-secondary hover:border-accent/50 hover:text-primary'
+              }`}
             >
+              {key === 'all' ? t.certifications.all : catLabel(key)}
+            </button>
+          ))}
+        </div>
+
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <AnimatePresence>
+            {filteredCerts.map((cert) => (
+              <motion.div
+                key={cert.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                className="bento-card flex flex-col p-0 overflow-hidden"
+              >
               {/* Certificate Image */}
               {cert.image && (
                 <div className="w-full h-48 sm:h-64 overflow-hidden border-b border-card-border relative group">
@@ -73,7 +101,8 @@ export default function Certifications() {
               </div>
             </motion.div>
           ))}
-        </div>
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );

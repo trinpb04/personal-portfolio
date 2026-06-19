@@ -151,6 +151,11 @@ export const translations = {
       issued: 'Issued',
       grade: 'Grade',
       verify: 'Verify Certificate',
+      all: 'All',
+      categories: {
+        'data-science': 'Data Science & AI',
+        'data-analysis': 'Data Analysis',
+      },
     },
 
     contact: {
@@ -313,6 +318,11 @@ export const translations = {
       issued: 'Cấp ngày',
       grade: 'Kết quả',
       verify: 'Xác minh chứng chỉ',
+      all: 'Tất cả',
+      categories: {
+        'data-science': 'Khoa học Dữ liệu & AI',
+        'data-analysis': 'Phân tích Dữ liệu',
+      },
     },
 
     contact: {
