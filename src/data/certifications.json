@@ -1,5 +1,32 @@
 [
   {
+    "id": "cert-python-project",
+    "name": {
+      "en": "Python Project for Data Science",
+      "vi": "Dự án Python cho Khoa học Dữ liệu"
+    },
+    "category": "data-science",
+    "issuer": "IBM",
+    "date": "June 20, 2026",
+    "grade": "100%",
+    "url": "https://coursera.org/share/ced0d57041413c3775f93df58483b47b",
+    "image": "/certificates/Python Project for Data Science.jpg",
+    "skills": {
+      "en": [
+        "Play the role of a Data Scientist / Data Analyst working on a real-world project.",
+        "Demonstrate Python skills — the language of choice for Data Science and Data Analysis.",
+        "Apply Python fundamentals, data structures, and working with data in Python.",
+        "Build a dashboard using Python with Pandas, BeautifulSoup, and Plotly in Jupyter Notebook."
+      ],
+      "vi": [
+        "Đóng vai Data Scientist / Data Analyst làm việc trên một dự án thực tế.",
+        "Thể hiện kỹ năng Python — ngôn ngữ chủ lực cho Data Science và Data Analysis.",
+        "Áp dụng nền tảng Python, cấu trúc dữ liệu và xử lý dữ liệu trong Python.",
+        "Xây dựng dashboard bằng Python với Pandas, BeautifulSoup và Plotly trên Jupyter Notebook."
+      ]
+    }
+  },
+  {
     "id": "cert-python",
     "name": {
       "en": "Python for Data Science, AI & Development",
