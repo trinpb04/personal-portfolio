@@ -62,6 +62,7 @@ export default function Certifications() {
                     src={cert.image}
                     alt={cert.name[lang]}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onError={(e) => { e.currentTarget.parentElement.style.display = 'none'; }}
                   />
                 </div>
               )}

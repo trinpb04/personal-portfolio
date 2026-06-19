@@ -1,15 +1,15 @@
 [
   {
-    "id": "cert-1",
+    "id": "cert-python",
     "name": {
       "en": "Python for Data Science, AI & Development",
       "vi": "Python cho Khoa học Dữ liệu, AI & Phát triển"
     },
     "category": "data-science",
     "issuer": "IBM",
-    "date": "May 25, 2026",
+    "date": "June 19, 2026",
     "grade": "93.75%",
-    "url": "https://coursera.org/share/28190add2b8f519dca70974bc0dbccc3",
+    "url": "https://coursera.org/verify/0ZGOJQYXLDY9",
     "image": "/certificates/Python for Data Science, AI & Development.jpg",
     "skills": {
       "en": [
@@ -20,14 +20,14 @@
       ],
       "vi": [
         "Nắm vững nền tảng Python: cú pháp, kiểu dữ liệu, biến và thao tác chuỗi.",
-        "Thành thạo Pandas và NumPy, phát triển code trên Jupyter NoteBooks.",
+        "Thành thạo Pandas và NumPy, phát triển code trên Jupyter Notebooks.",
         "Áp dụng logic Python: cấu trúc dữ liệu, điều kiện, vòng lặp, hàm, xử lý ngoại lệ và OOP.",
         "Thu thập và trích xuất dữ liệu web qua REST API bằng requests và BeautifulSoup."
       ]
     }
   },
   {
-    "id": "cert-2",
+    "id": "cert-cognos",
     "name": {
       "en": "Data Visualization and Dashboards with Excel and Cognos",
       "vi": "Trực quan hóa Dữ liệu & Dashboard với Excel và Cognos"
@@ -36,7 +36,7 @@
     "issuer": "IBM",
     "date": "May 25, 2026",
     "grade": "92.80%",
-    "url": "https://coursera.org/share/ac357ab7782cab54c34029a297a0c181",
+    "url": "https://coursera.org/verify/IICH5JRDRWYI",
     "image": "/certificates/excel_cognos.jpg",
     "skills": {
       "en": [
@@ -54,7 +54,61 @@
     }
   },
   {
-    "id": "cert-3",
+    "id": "cert-excel-basics",
+    "name": {
+      "en": "Excel Basics for Data Analysis",
+      "vi": "Excel Cơ bản cho Phân tích Dữ liệu"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "May 22, 2026",
+    "grade": "95.86%",
+    "url": "https://coursera.org/verify/5RVZYK4X8KSD",
+    "image": "/certificates/Excel Basics for Data Analysis.jpg",
+    "skills": {
+      "en": [
+        "Demonstrate working knowledge of Excel for Data Analysis.",
+        "Employ data quality techniques to import and clean data in Excel.",
+        "Perform core spreadsheet tasks: navigation, data entry, and formulas.",
+        "Analyze data using filter, sort, look-up functions, and pivot tables."
+      ],
+      "vi": [
+        "Sử dụng thành thạo Excel cho phân tích dữ liệu.",
+        "Áp dụng kỹ thuật data quality để import và làm sạch dữ liệu trong Excel.",
+        "Thực hiện các thao tác bảng tính cốt lõi: điều hướng, nhập liệu và công thức.",
+        "Phân tích dữ liệu bằng filter, sort, hàm look-up và pivot table."
+      ]
+    }
+  },
+  {
+    "id": "cert-intro",
+    "name": {
+      "en": "Introduction to Data Analytics",
+      "vi": "Nhập môn Phân tích Dữ liệu"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "May 22, 2026",
+    "grade": "95%",
+    "url": "https://coursera.org/verify/JJU7PTSZBZ8J",
+    "image": "/certificates/Introduction to Data Analytics.jpg",
+    "skills": {
+      "en": [
+        "Explain what Data Analytics is and the key steps in the Data Analytics process.",
+        "Differentiate between data roles: Data Engineer, Data Analyst, Data Scientist, Business Analyst, and BI Analyst.",
+        "Describe the different types of data structures, file formats, and sources of data.",
+        "Describe the data analysis process: collecting, wrangling, mining, and visualizing data."
+      ],
+      "vi": [
+        "Giải thích Data Analytics là gì và các bước chính trong quy trình phân tích dữ liệu.",
+        "Phân biệt các vai trò dữ liệu: Data Engineer, Data Analyst, Data Scientist, Business Analyst và BI Analyst.",
+        "Mô tả các loại cấu trúc dữ liệu, định dạng file và nguồn dữ liệu.",
+        "Mô tả quy trình phân tích: thu thập, làm sạch, khai phá và trực quan hóa dữ liệu."
+      ]
+    }
+  },
+  {
+    "id": "cert-ueh",
     "name": {
       "en": "Data Aggregation and Analysis with Excel",
       "vi": "Tổng hợp và Phân tích dữ liệu bằng Excel"
