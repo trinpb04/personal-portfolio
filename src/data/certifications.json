@@ -1,5 +1,32 @@
 [
   {
+    "id": "cert-databases-sql",
+    "name": {
+      "en": "Databases and SQL for Data Science with Python",
+      "vi": "Cơ sở dữ liệu và SQL cho Khoa học Dữ liệu với Python"
+    },
+    "category": "data-science",
+    "issuer": "IBM",
+    "date": "June 26, 2026",
+    "grade": "100%",
+    "url": "https://coursera.org/verify/AZUPJE163TR1",
+    "image": "/certificates/Databases and SQL for Data Science with Python.jpg",
+    "skills": {
+      "en": [
+        "Analyze data within a database using SQL and Python.",
+        "Create a relational database and work with multiple tables using DDL commands.",
+        "Construct basic to intermediate-level SQL queries using DML commands.",
+        "Compose advanced queries with views, transactions, stored procedures, and joins."
+      ],
+      "vi": [
+        "Phân tích dữ liệu trong database bằng SQL và Python.",
+        "Tạo cơ sở dữ liệu quan hệ và làm việc với nhiều bảng bằng lệnh DDL.",
+        "Viết truy vấn SQL từ cơ bản đến trung cấp bằng lệnh DML.",
+        "Soạn truy vấn nâng cao với view, transaction, stored procedure và join."
+      ]
+    }
+  },
+  {
     "id": "cert-python-project",
     "name": {
       "en": "Python Project for Data Science",
