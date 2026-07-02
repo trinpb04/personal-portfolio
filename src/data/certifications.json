@@ -9,7 +9,7 @@
     "issuer": "dbt Labs",
     "date": "July 2, 2026",
     "grade": "Passed",
-    "url": "https://credentials.dbtlabs.com/",
+    "url": "https://credentials.getdbt.com/c2f6696b-bde6-4067-81fb-f7317bf01ddc",
     "image": "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187031952",
     "fit": "contain",
     "skills": {
@@ -212,8 +212,4 @@
         "Tổng hợp và làm sạch dữ liệu",
         "Phân tích dữ liệu nâng cao trong Excel",
         "Pivot Table & Pivot Chart",
-        "Hàm tài chính & thống kê"
-      ]
-    }
-  }
-]
+        "Hàm tài chính
