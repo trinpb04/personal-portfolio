@@ -57,11 +57,11 @@ export default function Certifications() {
               >
               {/* Certificate Image */}
               {cert.image && (
-                <div className="w-full h-48 sm:h-64 overflow-hidden border-b border-card-border relative group">
+                <div className={`w-full h-48 sm:h-64 overflow-hidden border-b border-card-border relative group ${cert.fit === 'contain' ? 'bg-white' : ''}`}>
                   <img
                     src={cert.image}
                     alt={cert.name[lang]}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${cert.fit === 'contain' ? 'object-contain p-3' : 'object-cover'}`}
                     onError={(e) => { e.currentTarget.parentElement.style.display = 'none'; }}
                   />
                 </div>

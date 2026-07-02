@@ -1,5 +1,33 @@
 [
   {
+    "id": "cert-dbt",
+    "name": {
+      "en": "dbt Fundamentals",
+      "vi": "dbt Fundamentals"
+    },
+    "category": "data-analysis",
+    "issuer": "dbt Labs",
+    "date": "July 2, 2026",
+    "grade": "Passed",
+    "url": "https://credentials.dbtlabs.com/",
+    "image": "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187031952",
+    "fit": "contain",
+    "skills": {
+      "en": [
+        "Build modular, reusable data models in dbt.",
+        "Define sources and add tests to safeguard data quality.",
+        "Generate and maintain data documentation (docs).",
+        "Deploy dbt projects following the analytics engineering workflow."
+      ],
+      "vi": [
+        "Xây dựng data model mô-đun, tái sử dụng trong dbt.",
+        "Khai báo sources và thêm tests để đảm bảo chất lượng dữ liệu.",
+        "Tạo và duy trì tài liệu dữ liệu (docs).",
+        "Triển khai (deploy) dự án dbt theo quy trình analytics engineering."
+      ]
+    }
+  },
+  {
     "id": "cert-databases-sql",
     "name": {
       "en": "Databases and SQL for Data Science with Python",
