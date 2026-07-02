@@ -30,7 +30,7 @@ export default function Techstack() {
   const skills = t.techstack.skills.map((s, i) => ({ ...s, ...skillMeta[i] }));
 
   // Self-assessed proficiency (0-100), paired with t.techstack.radarAxes. Edit freely.
-  const radarValues = [35, 70, 85, 95, 75, 90];
+  const radarValues = [50, 70, 85, 95, 75, 90];
   const radarData = t.techstack.radarAxes.map((axis, i) => ({ axis, value: radarValues[i] }));
 
   return (
