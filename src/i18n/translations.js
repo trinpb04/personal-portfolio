@@ -137,6 +137,7 @@ export const translations = {
       githubTitle: 'GitHub Activity',
       githubSub: 'Contribution graph (last 12 months)',
       categories: {
+        'data-engineering': 'Data Engineering',
         'learning-platform': 'Learning Platform',
         'ai-agent': 'AI Agent',
         'data-crawling': 'Data Crawling',
@@ -304,6 +305,7 @@ export const translations = {
       githubTitle: 'Hoạt động GitHub',
       githubSub: 'Biểu đồ đóng góp (12 tháng gần nhất)',
       categories: {
+        'data-engineering': 'Kỹ thuật Dữ liệu',
         'learning-platform': 'Nền tảng Học tập',
         'ai-agent': 'AI Agent',
         'data-crawling': 'Thu thập Dữ liệu',

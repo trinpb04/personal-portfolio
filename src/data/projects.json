@@ -1,5 +1,25 @@
 [
   {
+    "id": "proj-dbt-dag",
+    "title": "dbt-dag",
+    "categoryKey": "data-engineering",
+    "description": {
+      "en": "My first end-to-end data engineering project: an ELT pipeline that orchestrates dbt models on Snowflake through Apache Airflow using astronomer-cosmos. Each dbt model becomes a native Airflow task with dependencies auto-derived from ref()/source(), fully containerized with Docker and the Astro CLI.",
+      "vi": "Dự án data engineering end-to-end đầu tiên của mình: pipeline ELT điều phối các dbt model trên Snowflake qua Apache Airflow bằng astronomer-cosmos. Mỗi dbt model trở thành một Airflow task với quan hệ phụ thuộc tự sinh từ ref()/source(), đóng gói hoàn toàn bằng Docker và Astro CLI."
+    },
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/dbt-dag",
+    "reportUrl": "",
+    "techStack": [
+      { "name": "Airflow", "color": "text-blue-400", "bg": "bg-blue-400/10" },
+      { "name": "dbt", "color": "text-yellow-400", "bg": "bg-yellow-400/10" },
+      { "name": "Snowflake", "color": "text-blue-500", "bg": "bg-blue-500/10" },
+      { "name": "Cosmos", "color": "text-purple-400", "bg": "bg-purple-400/10" },
+      { "name": "Docker", "color": "text-blue-400", "bg": "bg-blue-400/10" }
+    ]
+  },
+  {
     "id": "proj-academy",
     "title": "data-analyst-academy",
     "categoryKey": "learning-platform",
