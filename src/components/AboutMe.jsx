@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
-import ProfileLanyard from './effects/ProfileLanyard';
+import Lanyard from './effects/Lanyard';
 import ShinyText from './effects/ShinyText';
 
-export default function AboutMe() {
+export default function AboutMe({ theme }) {
   const { t } = useLanguage();
 
   return (
@@ -67,8 +67,8 @@ export default function AboutMe() {
             </motion.div>
           </div>
 
-          <div className="hidden md:block">
-            <ProfileLanyard />
+          <div className="hidden md:block w-full h-[600px] md:h-[700px]">
+            <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} frontImage="/avatar/profile.jpg" theme={theme} lanyardImage={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} />
           </div>
         </motion.div>
       </div>

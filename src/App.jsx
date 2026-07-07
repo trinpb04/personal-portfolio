@@ -44,7 +44,7 @@ function App() {
       <Navbar theme={theme} setTheme={setTheme} />
 
       <main>
-        <AboutMe />
+        <AboutMe theme={theme} />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-y border-card-border">
           <LogoLoop />
         </div>
