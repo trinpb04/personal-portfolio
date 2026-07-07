@@ -67,7 +67,8 @@ body {
   opacity: 0; transition: opacity .3s ease; pointer-events: none; z-index: 0;
 }
 .bento-card:hover::before { opacity: 1; }
-.bento-card > * { position: relative; z-index: 1; }
+.bento-card > *:not(.absolute) { position: relative; z-index: 1; }
+.bento-card > .absolute { z-index: 1; }
 
 /* --- Logo loop --- */
 .logo-loop-track { animation: logo-scroll 32s linear infinite; }
