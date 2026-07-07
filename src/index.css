@@ -50,3 +50,36 @@ body {
   box-shadow: 0 10px 30px -10px var(--accent-glow);
   border-color: var(--accent);
 }
+
+/* --- Shiny text --- */
+.shiny-text {
+  background: linear-gradient(120deg, var(--text-primary) 42%, var(--accent) 50%, var(--text-primary) 58%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: shiny 4s linear infinite;
+}
+@keyframes shiny { to { background-position: -200% 0; } }
+
+/* --- Card spotlight glow (works with CardGlow.jsx) --- */
+.bento-card::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), var(--accent-glow), transparent 60%);
+  opacity: 0; transition: opacity .3s ease; pointer-events: none; z-index: 0;
+}
+.bento-card:hover::before { opacity: 1; }
+.bento-card > * { position: relative; z-index: 1; }
+
+/* --- Logo loop --- */
+.logo-loop-track { animation: logo-scroll 32s linear infinite; }
+.logo-loop-mask:hover .logo-loop-track { animation-play-state: paused; }
+.logo-loop-item { filter: grayscale(1); opacity: .55; transition: filter .3s, opacity .3s; }
+.logo-loop-item:hover { filter: grayscale(0); opacity: 1; }
+.logo-loop-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+@keyframes logo-scroll { to { transform: translateX(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .shiny-text, .logo-loop-track { animation: none; }
+}

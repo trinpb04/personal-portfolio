@@ -10,6 +10,10 @@ import Certifications from './components/Certifications';
 import { Contact } from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import { useLanguage } from './i18n/LanguageContext';
+import SiteBackground from './components/effects/SiteBackground';
+import ClickSpark from './components/effects/ClickSpark';
+import CardGlow from './components/effects/CardGlow';
+import LogoLoop from './components/effects/LogoLoop';
 
 function App() {
   const { t } = useLanguage();
@@ -33,11 +37,17 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-bg text-text-primary transition-colors duration-300">
+    <div className="min-h-screen bg-transparent text-text-primary transition-colors duration-300">
+      <SiteBackground theme={theme} />
+      <ClickSpark />
+      <CardGlow />
       <Navbar theme={theme} setTheme={setTheme} />
 
       <main>
         <AboutMe />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-y border-card-border">
+          <LogoLoop />
+        </div>
         <ImpactMetrics />
         <Techstack />
         <Experience />

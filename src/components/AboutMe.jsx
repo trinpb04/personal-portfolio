@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
+import ProfileLanyard from './effects/ProfileLanyard';
+import ShinyText from './effects/ShinyText';
 
 export default function AboutMe() {
   const { t } = useLanguage();
@@ -25,7 +27,7 @@ export default function AboutMe() {
               </h2>
               <h1 className="text-5xl md:text-7xl font-extrabold text-primary mb-6 leading-tight">
                 Nguyen Phuoc <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-500">Bao Tri</span>
+                <ShinyText>Bao Tri</ShinyText>
               </h1>
               <p className="text-lg text-text-secondary mb-8 max-w-lg leading-relaxed">
                 {t.about.bio}
@@ -65,33 +67,9 @@ export default function AboutMe() {
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="relative hidden md:flex items-center justify-center"
-          >
-            <div className="relative w-80 h-80 md:w-96 md:h-96">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent to-blue-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-
-              {/* Profile Image Container */}
-              <div className="relative w-full h-full rounded-[2rem] border-2 border-card-border overflow-hidden bg-card shadow-2xl group">
-                <img
-                  src="/avatar/profile.jpg"
-                  alt="Nguyen Phuoc Bao Tri"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-card border border-card-border rounded-xl p-3 shadow-lg rotate-12 hover:rotate-0 transition-transform duration-300">
-                <div className="w-full h-full border-2 border-dashed border-accent/50 rounded-lg flex items-center justify-center flex-col">
-                  <span className="text-accent font-bold text-xl">1+</span>
-                  <span className="text-xs text-text-secondary font-mono">{t.about.yearsBadge}</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          <div className="hidden md:block">
+            <ProfileLanyard />
+          </div>
         </motion.div>
       </div>
     </section>
