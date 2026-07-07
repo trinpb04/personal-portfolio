@@ -13,7 +13,7 @@ After finishing: test with `npm run dev`, then commit + push from Antigravity.
 - `LogoLoop.jsx` — infinite marquee of tool logos (needs CSS below).
 - `ProfileLanyard.jsx` — draggable lanyard badge (desktop) / tilt card (mobile).
 
-## ⬜ Remaining tasks (integration only)
+## ✅ Completed tasks (integration)
 
 ### 1. `src/App.jsx` — mount global effects
 Add imports:
@@ -96,7 +96,7 @@ import ShinyText from './effects/ShinyText';
 ### 4. Count Up — DONE
 `ImpactMetrics.jsx` already animates the numbers (AnimatedCounter). No action needed.
 
-### 5. Test & ship
+### 5. ✅ Test & ship
 1. `npm run dev` → check: galaxy on dark / dot-grid on light, click sparks, card glow on hover, logo loop scrolls, lanyard drags (desktop) / tilt (mobile).
 2. If a section looks too busy over the galaxy, add `backdrop-blur-sm` or a translucent bg to that section wrapper.
 3. Commit + push:
