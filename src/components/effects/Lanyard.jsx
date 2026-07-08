@@ -269,8 +269,13 @@ function Band({
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
             
             <Html transform position={[0, -0.7, 0.05]} center distanceFactor={1.5}>
-              <div className="bg-card/90 dark:bg-[#1a1a1a]/90 backdrop-blur-md px-3 py-1.5 rounded-md border border-card-border shadow-xl whitespace-nowrap font-mono text-sm pointer-events-none">
-                <span className="font-bold text-primary dark:text-[#FDF6E3]">Data Analyst &bull; Analyst Engineering</span>
+              <div className="relative bg-white/80 dark:bg-black/50 backdrop-blur-xl px-5 py-2 rounded-full border border-white/20 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] whitespace-nowrap overflow-hidden pointer-events-none flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-transparent to-accent/10 opacity-100"></div>
+                <span className="relative z-10 font-bold text-[0.75rem] uppercase tracking-widest text-primary dark:text-white flex items-center gap-3">
+                  Data Analyst 
+                  <span className="text-accent text-lg leading-none">&bull;</span> 
+                  Analyst Engineering
+                </span>
               </div>
             </Html>
           </group>
