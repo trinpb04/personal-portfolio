@@ -2,7 +2,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, extend, useFrame } from '@react-three/fiber';
-import { useGLTF, useTexture, Environment, Lightformer, Html } from '@react-three/drei';
+import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei';
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 
@@ -47,7 +47,7 @@ export default function Lanyard({
   }, []);
 
   return (
-    <div className="relative z-0 w-full h-[600px] md:h-[700px] flex justify-center items-center transform scale-100 origin-center">
+    <div className="relative z-0 w-full h-[600px] md:h-[700px] flex justify-center items-center overflow-hidden">
       <Canvas
         camera={{ position: position, fov: fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
@@ -231,7 +231,7 @@ function Band({
 
   return (
     <>
-      <group position={[0, 4, 0]}>
+      <group position={[0, 5, 0]}>
         <RigidBody ref={fixed} {...segmentProps} type="fixed" />
         <RigidBody position={[0.5, 0, 0]} ref={j1} {...segmentProps}>
           <BallCollider args={[0.1]} />
@@ -267,17 +267,6 @@ function Band({
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
-            
-            <Html transform position={[0, -0.6, 0.05]} center distanceFactor={1.4}>
-              <div className="relative bg-white/80 dark:bg-black/50 backdrop-blur-xl px-4 py-1.5 rounded-full border border-white/20 dark:border-white/10 shadow-lg whitespace-nowrap overflow-hidden pointer-events-none flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-transparent to-accent/10 opacity-100"></div>
-                <span className="relative z-10 font-bold text-[0.65rem] uppercase tracking-widest text-primary dark:text-white flex items-center gap-2">
-                  Data Analyst 
-                  <span className="text-accent">&bull;</span> 
-                  Analyst Engineering
-                </span>
-              </div>
-            </Html>
           </group>
         </RigidBody>
       </group>

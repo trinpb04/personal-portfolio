@@ -37,7 +37,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-transparent text-text-primary transition-colors duration-300">
+    <div className="min-h-screen bg-transparent text-text-primary transition-colors duration-300 overflow-x-hidden">
       <SiteBackground theme={theme} />
       <ClickSpark />
       <CardGlow />

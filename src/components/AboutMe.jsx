@@ -8,7 +8,7 @@ export default function AboutMe({ theme }) {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="pt-32 pb-16 min-h-screen flex items-center">
+    <section id="about" className="pt-24 pb-10 min-h-screen flex items-center overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ export default function AboutMe({ theme }) {
           transition={{ duration: 0.5 }}
           className="grid md:grid-cols-2 gap-12 items-center"
         >
-          <div>
+          <div className="min-w-0">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -25,7 +25,7 @@ export default function AboutMe({ theme }) {
               <h2 className="text-accent text-sm font-bold tracking-widest uppercase mb-3 font-mono">
                 {t.about.eyebrow}
               </h2>
-              <h1 className="text-5xl md:text-7xl font-extrabold text-primary mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary mb-6 leading-tight break-words">
                 Nguyen Phuoc <br />
                 <ShinyText>Bao Tri</ShinyText>
               </h1>
@@ -67,7 +67,20 @@ export default function AboutMe({ theme }) {
             </motion.div>
           </div>
 
-          <div className="hidden md:block w-full h-[600px] md:h-[700px]">
+          {/* Mobile: clean static profile (3D lanyard is desktop-only) */}
+          <div className="md:hidden flex justify-center">
+            <div className="relative w-56 h-56">
+              <div className="absolute -inset-3 bg-gradient-to-tr from-accent to-blue-500 rounded-3xl blur-2xl opacity-25" />
+              <img
+                src="/avatar/profile.jpg"
+                alt="Nguyen Phuoc Bao Tri"
+                className="relative w-full h-full rounded-2xl object-cover border-2 border-card-border shadow-xl"
+              />
+            </div>
+          </div>
+
+          {/* Desktop: draggable 3D lanyard */}
+          <div className="hidden md:block w-full h-[600px] md:h-[700px] overflow-hidden relative">
             <Lanyard position={[0, -0.5, 13]} gravity={[0, -40, 0]} frontImage="/avatar/profile.jpg" theme={theme} lanyardImage={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} />
           </div>
         </motion.div>

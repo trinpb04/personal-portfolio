@@ -82,11 +82,7 @@ export default function Techstack() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{t.techstack.eduTitle}</h3>
               <p className="text-sm text-text-secondary font-medium mb-1">{t.techstack.eduDegree}</p>
-              <p className="text-xs text-text-secondary mb-6">{t.techstack.eduSchool}</p>
-            </div>
-            <div className="mt-auto">
-              <p className="text-sm text-text-secondary mb-1">{t.techstack.gpaLabel}</p>
-              <p className="text-4xl font-mono font-bold text-primary">8.4<span className="text-xl text-text-secondary">/10</span></p>
+              <p className="text-xs text-text-secondary">{t.techstack.eduSchool}</p>
             </div>
           </motion.div>
 
