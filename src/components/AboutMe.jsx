@@ -68,7 +68,7 @@ export default function AboutMe({ theme }) {
           </div>
 
           <div className="hidden md:block w-full h-[600px] md:h-[700px]">
-            <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} frontImage="/avatar/profile.jpg" theme={theme} lanyardImage={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} />
+            <Lanyard position={[0, -0.5, 13]} gravity={[0, -40, 0]} frontImage="/avatar/profile.jpg" theme={theme} lanyardImage={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} />
           </div>
         </motion.div>
       </div>
