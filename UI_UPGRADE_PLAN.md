@@ -74,7 +74,7 @@ import ShinyText from './effects/ShinyText';
   background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), var(--accent-glow), transparent 60%);
   opacity: 0; transition: opacity .3s ease; pointer-events: none; z-index: 0;
 }
-.bento-card:hover::before { opacity: 1; }
+.bento-card:hover::before { opacity: 1; }![![alt text](image-1.png)](image.png)
 .bento-card > * { position: relative; z-index: 1; }
 
 /* --- Logo loop --- */

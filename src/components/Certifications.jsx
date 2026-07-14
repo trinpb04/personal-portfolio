@@ -3,17 +3,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Award, ExternalLink, CheckCircle2 } from 'lucide-react';
 import certData from '../data/certifications.json';
 import { useLanguage } from '../i18n/LanguageContext';
+import Pagination from './Pagination';
 
 export default function Certifications() {
   const { lang, t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(3);
 
   const catLabel = (key) => t.certifications.categories?.[key] || key;
   const categoryKeys = ['all', ...new Set(certData.map((c) => c.category))];
 
+  const handleCategoryChange = (key) => {
+    setActiveCategory(key);
+    setCurrentPage(1);
+  };
+
   const filteredCerts = activeCategory === 'all'
     ? certData
     : certData.filter((c) => c.category === activeCategory);
+
+  const paginatedCerts = filteredCerts.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <section id="certifications" className="py-20 relative">
@@ -31,7 +44,7 @@ export default function Certifications() {
           {categoryKeys.map((key) => (
             <button
               key={key}
-              onClick={() => setActiveCategory(key)}
+              onClick={() => handleCategoryChange(key)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 activeCategory === key
                   ? 'bg-accent/20 text-accent border border-accent/50'
@@ -44,8 +57,8 @@ export default function Certifications() {
         </div>
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <AnimatePresence>
-            {filteredCerts.map((cert) => (
+          <AnimatePresence mode="popLayout">
+            {paginatedCerts.map((cert) => (
               <motion.div
                 key={cert.id}
                 layout
@@ -104,6 +117,16 @@ export default function Certifications() {
           ))}
           </AnimatePresence>
         </motion.div>
+
+        {filteredCerts.length > 0 && (
+          <Pagination
+            totalItems={filteredCerts.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            setItemsPerPage={setItemsPerPage}
+            setCurrentPage={setCurrentPage}
+          />
+        )}
       </div>
     </section>
   );

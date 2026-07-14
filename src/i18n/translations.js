@@ -153,6 +153,13 @@ export const translations = {
       },
     },
 
+    pagination: {
+      prev: 'Prev',
+      next: 'Next',
+      itemsPerPage: 'Items per page',
+      of: 'of'
+    },
+
     certifications: {
       title: 'Certifications',
       skillsAcquired: 'Skills Acquired:',
@@ -324,12 +331,19 @@ export const translations = {
         'ai-agent': 'AI Agent',
         'data-crawling': 'Thu thập Dữ liệu',
         'financial-analysis': 'Phân tích Tài chính',
-        econometrics: 'Kinh tế Lượng',
+        econometrics: 'Kinh tế lượng',
       },
     },
 
+    pagination: {
+      prev: 'Trang trước',
+      next: 'Trang sau',
+      itemsPerPage: 'Hiển thị',
+      of: 'trên'
+    },
+
     certifications: {
-      title: 'Chứng Chỉ',
+      title: 'Chứng chỉ',
       skillsAcquired: 'Kỹ năng đạt được:',
       issued: 'Cấp ngày',
       grade: 'Kết quả',

@@ -4,6 +4,7 @@ import { Database, Star, GitFork, ExternalLink, FileText, GraduationCap, Rocket 
 import { AreaChart, Area, ResponsiveContainer } from 'recharts';
 import projectData from '../data/projects.json';
 import { useLanguage } from '../i18n/LanguageContext';
+import Pagination from './Pagination';
 
 const GITHUB_USERNAME = 'trinpb04';
 
@@ -37,8 +38,15 @@ function Sparkline({ values }) {
 export default function Projects() {
   const { lang, t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('All');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
 
   const catLabel = (key) => t.projects.categories[key] || key;
+
+  const handleCategoryChange = (key) => {
+    setActiveCategory(key);
+    setCurrentPage(1); // Reset to page 1 on category change
+  };
 
   // Unique category keys, with a leading "All".
   const categoryKeys = ['All', ...new Set(projectData.map((p) => p.categoryKey))];
@@ -46,6 +54,11 @@ export default function Projects() {
   const filteredProjects = activeCategory === 'All'
     ? projectData
     : projectData.filter((p) => p.categoryKey === activeCategory);
+
+  const paginatedProjects = filteredProjects.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <section id="projects" className="py-20 bg-card/30">
@@ -62,7 +75,7 @@ export default function Projects() {
           {categoryKeys.map((key) => (
             <button
               key={key}
-              onClick={() => setActiveCategory(key)}
+              onClick={() => handleCategoryChange(key)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 activeCategory === key
                   ? 'bg-accent/20 text-accent border border-accent/50'
@@ -76,8 +89,8 @@ export default function Projects() {
 
         {/* Projects Grid */}
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AnimatePresence>
-            {filteredProjects.map((project) => {
+          <AnimatePresence mode="popLayout">
+            {paginatedProjects.map((project) => {
               const hasRepo = Boolean(project.githubUrl);
               const hasReport = Boolean(project.reportUrl);
               const hasLive = Boolean(project.liveUrl);
@@ -209,6 +222,16 @@ export default function Projects() {
             })}
           </AnimatePresence>
         </motion.div>
+
+        {filteredProjects.length > 0 && (
+          <Pagination
+            totalItems={filteredProjects.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            setItemsPerPage={setItemsPerPage}
+            setCurrentPage={setCurrentPage}
+          />
+        )}
 
         {/* GitHub contribution heatmap */}
         <motion.div

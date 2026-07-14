@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { LayoutDashboard, Lock, Maximize2 } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
+import Pagination from './Pagination';
 
 // Image paths pair with t.dashboards.items by index.
 const images = [
@@ -12,6 +14,15 @@ const images = [
 export default function Dashboards() {
   const { t } = useLanguage();
   const items = t.dashboards.items;
+  
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(4); // Dashboards are wide, maybe default 2 or 4
+
+  const itemsWithIndex = items.map((item, idx) => ({ ...item, originalIndex: idx }));
+  const paginatedItems = itemsWithIndex.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <section id="dashboards" className="py-20 bg-card/30">
@@ -26,9 +37,12 @@ export default function Dashboards() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {items.map((item, idx) => (
-            <motion.div
-              key={idx}
+          <AnimatePresence mode="popLayout">
+            {paginatedItems.map((item, idx) => {
+              const imagePath = images[item.originalIndex];
+              return (
+                <motion.div
+                  key={item.originalIndex}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
@@ -37,13 +51,13 @@ export default function Dashboards() {
             >
               {/* Dashboard image (click to open full size or url) */}
               <a
-                href={item.url || images[idx]}
+                href={item.url || imagePath}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block border-b border-card-border group"
               >
                 <img
-                  src={images[idx]}
+                  src={imagePath}
                   alt={item.title}
                   loading="lazy"
                   className="w-full h-auto"
@@ -80,8 +94,20 @@ export default function Dashboards() {
                 </div>
               </div>
             </motion.div>
-          ))}
+            );
+          })}
+          </AnimatePresence>
         </div>
+
+        {items.length > 0 && (
+          <Pagination
+            totalItems={items.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            setItemsPerPage={setItemsPerPage}
+            setCurrentPage={setCurrentPage}
+          />
+        )}
       </div>
     </section>
   );
