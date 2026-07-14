@@ -138,6 +138,27 @@ export default function Projects() {
                     {project.description[lang]}
                   </p>
 
+                  {/* Dashboard Image Link */}
+                  {project.dashboardImage && project.dashboardUrl && (
+                    <a 
+                      href={project.dashboardUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/dash relative w-full aspect-[16/10] mb-4 rounded-lg overflow-hidden border border-card-border shadow-sm block"
+                    >
+                      <img 
+                        src={project.dashboardImage} 
+                        alt={`${project.title} Dashboard`} 
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover/dash:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/dash:opacity-100 transition-opacity flex items-center justify-center">
+                        <span className="flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-xl transform translate-y-4 group-hover/dash:translate-y-0 transition-transform">
+                          <ExternalLink size={16} /> {t.projects?.viewDashboard || "View Dashboard"}
+                        </span>
+                      </div>
+                    </a>
+                  )}
+
                   {/* Live web app button (shown when a deployed URL exists) */}
                   {hasLive && (
                     <a

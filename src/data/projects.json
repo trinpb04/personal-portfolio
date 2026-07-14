@@ -10,6 +10,8 @@
     "stars": 0,
     "forks": 0,
     "githubUrl": "https://github.com/trinpb04/dbt-dag",
+    "dashboardUrl": "https://app.powerbi.com/view?r=eyJrIjoiNDQ3ZWEzN2QtYjA4ZC00NWVkLTg4NjMtMThlNWRiOWU2N2I3IiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true",
+    "dashboardImage": "/dashboards/dbt-dag-dashboard.png",
     "reportUrl": "",
     "techStack": [
       { "name": "Airflow", "color": "text-blue-400", "bg": "bg-blue-400/10" },

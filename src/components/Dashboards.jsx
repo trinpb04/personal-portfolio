@@ -6,6 +6,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 const images = [
   '/dashboards/on25-dashboard.png',
   '/dashboards/concentrix-dashboard.png',
+  '/dashboards/dbt-dag-dashboard.png',
 ];
 
 export default function Dashboards() {
@@ -34,9 +35,9 @@ export default function Dashboards() {
               transition={{ delay: idx * 0.1, duration: 0.5 }}
               className="bento-card p-0 overflow-hidden flex flex-col"
             >
-              {/* Dashboard image (click to open full size) */}
+              {/* Dashboard image (click to open full size or url) */}
               <a
-                href={images[idx]}
+                href={item.url || images[idx]}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block border-b border-card-border group"
@@ -48,16 +49,20 @@ export default function Dashboards() {
                   className="w-full h-auto"
                 />
                 {/* Confidential badge */}
-                <span className="absolute top-3 left-3 flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-black/60 text-white backdrop-blur-sm">
-                  <Lock size={12} /> {t.dashboards.maskNote}
-                </span>
+                {!item.url && (
+                  <span className="absolute top-3 left-3 flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-black/60 text-white backdrop-blur-sm">
+                    <Lock size={12} /> {t.dashboards.maskNote}
+                  </span>
+                )}
                 {/* Page-preview badge */}
-                <span className="absolute top-3 right-3 text-[11px] font-medium px-2.5 py-1 rounded-full bg-black/60 text-white backdrop-blur-sm">
-                  1 / multi-page
-                </span>
+                {!item.url && (
+                  <span className="absolute top-3 right-3 text-[11px] font-medium px-2.5 py-1 rounded-full bg-black/60 text-white backdrop-blur-sm">
+                    1 / multi-page
+                  </span>
+                )}
                 {/* Hover hint */}
                 <span className="absolute bottom-3 right-3 flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full bg-accent text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Maximize2 size={13} /> View full
+                  <Maximize2 size={13} /> {item.url ? 'View Dashboard' : 'View full'}
                 </span>
               </a>
 

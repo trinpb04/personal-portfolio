@@ -124,6 +124,13 @@ export const translations = {
           desc: 'Campaign funnel dashboard for a telesales operation — monitoring the call funnel (completed → connected → quality → order → NUA), target achievement, conversion rates and regional distribution.',
           tags: ['Power BI', 'Funnel Analysis', 'KPI Tracking'],
         },
+        {
+          company: 'Personal Project',
+          title: 'First Project DBT pipeline',
+          desc: 'An end-to-end data engineering project visualizing the ELT pipeline output. Showcasing sales overview, order count, total quantity, and revenue over time, segmented by market and RFM.',
+          tags: ['Power BI', 'Data Engineering', 'dbt'],
+          url: 'https://app.powerbi.com/view?r=eyJrIjoiNDQ3ZWEzN2QtYjA4ZC00NWVkLTg4NjMtMThlNWRiOWU2N2I3IiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true'
+        }
       ],
     },
 
@@ -292,6 +299,13 @@ export const translations = {
           desc: 'Dashboard phễu chiến dịch telesales — theo dõi phễu cuộc gọi (completed → connected → quality → order → NUA), mức đạt mục tiêu, tỉ lệ chuyển đổi và phân bổ theo khu vực.',
           tags: ['Power BI', 'Funnel Analysis', 'KPI Tracking'],
         },
+        {
+          company: 'Dự án cá nhân',
+          title: 'Dự án đầu tiên: DBT pipeline',
+          desc: 'Dự án data engineering end-to-end trực quan hóa đầu ra của pipeline ELT. Hiển thị tổng quan doanh số, số lượng đơn hàng, tổng số lượng và doanh thu theo thời gian, phân khúc theo thị trường và RFM.',
+          tags: ['Power BI', 'Data Engineering', 'dbt'],
+          url: 'https://app.powerbi.com/view?r=eyJrIjoiNDQ3ZWEzN2QtYjA4ZC00NWVkLTg4NjMtMThlNWRiOWU2N2I3IiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true'
+        }
       ],
     },
 
