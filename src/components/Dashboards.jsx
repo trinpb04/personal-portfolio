@@ -8,6 +8,7 @@ import Pagination from './Pagination';
 const images = [
   '/dashboards/on25-dashboard.png',
   '/dashboards/concentrix-dashboard.png',
+  '/dashboards/xom-ecommerce-dashboard.png',
   '/dashboards/dbt-dag-dashboard.png',
 ];
 

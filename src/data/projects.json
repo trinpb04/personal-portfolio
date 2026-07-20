@@ -1,5 +1,27 @@
 [
   {
+    "id": "xom-ecommerce",
+    "title": "xom-ecommerce-data-pipeline",
+    "categoryKey": "data-engineering",
+    "description": {
+      "en": "An automated ELT data pipeline for the Xom E-commerce store. Extracts data from SQL Server using dlt, loads it into Snowflake, and transforms it using dbt (star schema, 10 tests, shared dimensions). Orchestrated by Airflow to run daily at 9 AM VN time. The final clean data powers 3 interactive Power BI dashboards (Import mode).",
+      "vi": "Pipeline dữ liệu ELT tự động cho cửa hàng Xom E-commerce. Trích xuất dữ liệu từ SQL Server bằng dlt, tải vào Snowflake và transform bằng dbt (star schema, 10 tests, dùng chung dimension). Điều phối bởi Airflow chạy tự động mỗi ngày lúc 9h sáng (VN). Dữ liệu sạch cuối cùng được trực quan hóa qua 3 dashboard Power BI (Import mode)."
+    },
+    "stars": 0,
+    "forks": 0,
+    "githubUrl": "https://github.com/trinpb04/xom-ecommerce-data-pipeline",
+    "dashboardUrl": "https://app.powerbi.com/view?r=eyJrIjoiOTAwYjNmMjYtZjRmNS00Y2I0LTgxMjYtZjYxYjNkNzhmZWRkIiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D",
+    "dashboardImage": "/dashboards/xom-ecommerce-project.png",
+    "reportUrl": "",
+    "techStack": [
+      { "name": "Airflow", "color": "text-purple-500", "bg": "bg-purple-500/10" },
+      { "name": "dlt", "color": "text-green-500", "bg": "bg-green-500/10" },
+      { "name": "Snowflake", "color": "text-blue-400", "bg": "bg-blue-400/10" },
+      { "name": "dbt", "color": "text-yellow-500", "bg": "bg-yellow-500/10" },
+      { "name": "Power BI", "color": "text-yellow-400", "bg": "bg-yellow-400/10" }
+    ]
+  },
+  {
     "id": "proj-dbt-dag",
     "title": "dbt-dag",
     "categoryKey": "data-engineering",

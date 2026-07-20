@@ -126,6 +126,13 @@ export const translations = {
         },
         {
           company: 'Personal Project',
+          title: 'Xom Ecommerce Data Pipeline',
+          desc: 'An automated daily ELT pipeline (Airflow, dlt, Snowflake, dbt) extracting data from SQL Server to power 3 comprehensive Power BI dashboards. Features a star schema with shared dimensions and 10 dbt tests for data quality.',
+          tags: ['Power BI', 'Data Engineering', 'dbt', 'Airflow', 'Snowflake'],
+          url: 'https://app.powerbi.com/view?r=eyJrIjoiOTAwYjNmMjYtZjRmNS00Y2I0LTgxMjYtZjYxYjNkNzhmZWRkIiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D'
+        },
+        {
+          company: 'Personal Project',
           title: 'First Project DBT pipeline',
           desc: 'An end-to-end data engineering project visualizing the ELT pipeline output. Showcasing sales overview, order count, total quantity, and revenue over time, segmented by market and RFM.',
           tags: ['Power BI', 'Data Engineering', 'dbt'],
@@ -305,6 +312,13 @@ export const translations = {
           title: 'Hiệu suất Telesales NUA',
           desc: 'Dashboard phễu chiến dịch telesales — theo dõi phễu cuộc gọi (completed → connected → quality → order → NUA), mức đạt mục tiêu, tỉ lệ chuyển đổi và phân bổ theo khu vực.',
           tags: ['Power BI', 'Funnel Analysis', 'KPI Tracking'],
+        },
+        {
+          company: 'Dự án cá nhân',
+          title: 'Xom Ecommerce Data Pipeline',
+          desc: 'Pipeline ELT tự động hàng ngày (Airflow, dlt, Snowflake, dbt) trích xuất dữ liệu từ SQL Server để phục vụ 3 dashboard Power BI. Cấu trúc star schema với các dimension dùng chung và 10 dbt tests đảm bảo chất lượng dữ liệu.',
+          tags: ['Power BI', 'Data Engineering', 'dbt', 'Airflow', 'Snowflake'],
+          url: 'https://app.powerbi.com/view?r=eyJrIjoiOTAwYjNmMjYtZjRmNS00Y2I0LTgxMjYtZjYxYjNkNzhmZWRkIiwidCI6IjM3MGZiM2I4LTMzMDYtNDg5MC05MDYzLWNjMDhiZTc4ODI1NyIsImMiOjEwfQ%3D%3D'
         },
         {
           company: 'Dự án cá nhân',
