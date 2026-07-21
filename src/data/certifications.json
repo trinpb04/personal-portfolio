@@ -9,6 +9,7 @@
     "issuer": "dbt Labs",
     "date": "July 2, 2026",
     "grade": "Passed",
+    "credentialId": "187031952",
     "url": "https://credentials.getdbt.com/c2f6696b-bde6-4067-81fb-f7317bf01ddc",
     "image": "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187031952",
     "fit": "contain",
@@ -28,6 +29,226 @@
     }
   },
   {
+    "id": "cert-ibm-data-analyst-prof",
+    "name": {
+      "en": "IBM Data Analyst Professional Certificate",
+      "vi": "Chứng chỉ Chuyên môn IBM Data Analyst"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "Specialization (11 Courses)",
+    "credentialId": "RKC5V70V9H9D",
+    "url": "https://coursera.org/verify/professional-cert/RKC5V70V9H9D",
+    "image": "/certificates/IBM Data Analyst.png",
+    "skills": {
+      "en": [
+        "Master practical skills and tools used by data analysts in daily roles including Excel, SQL, Python, Jupyter, and Cognos Analytics.",
+        "Demonstrate working knowledge of Python data libraries (Pandas, NumPy, Matplotlib, Seaborn, Folium, SciPy, Scikit-learn).",
+        "Extract, clean, analyze and visualize real-world datasets to uncover data-driven insights and communicate findings effectively.",
+        "Construct interactive dashboards and complete an end-to-end Data Analyst Capstone Project."
+      ],
+      "vi": [
+        "Thành thạo kỹ năng và công cụ thực tế của Data Analyst: Excel, SQL, Python, Jupyter Notebooks và Cognos Analytics.",
+        "Sử dụng thành thạo các thư viện dữ liệu Python (Pandas, NumPy, Matplotlib, Seaborn, Folium, SciPy, Scikit-learn).",
+        "Trích xuất, làm sạch, phân tích và trực quan hóa các tập dữ liệu thực tế để rút ra insight kinh doanh.",
+        "Xây dựng các dashboard tương tác và hoàn thành dự án đồ án tốt nghiệp Data Analyst Capstone Project end-to-end."
+      ]
+    }
+  },
+  {
+    "id": "cert-data-analysis-python",
+    "name": {
+      "en": "Data Analysis with Python",
+      "vi": "Phân tích Dữ liệu với Python"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "99%",
+    "credentialId": "DGT10321N8BH",
+    "url": "https://coursera.org/verify/DGT10321N8BH",
+    "image": "/certificates/Data Analysis with Python.jpg",
+    "skills": {
+      "en": [
+        "Construct Python programs to clean and prepare data for analysis by addressing missing values, formatting inconsistencies, normalization, and binning.",
+        "Analyze real-world datasets through exploratory data analysis (EDA) using libraries such as Pandas, NumPy, and SciPy to uncover patterns and insights.",
+        "Apply data operation techniques using dataframes to organize, summarize, and interpret data distributions, correlation analysis, and data pipelines.",
+        "Develop and evaluate regression models using Scikit-learn, and use these models to generate predictions and support data-driven decision-making."
+      ],
+      "vi": [
+        "Viết chương trình Python để làm sạch và chuẩn bị dữ liệu bằng cách xử lý giá trị thiếu, định dạng bất đồng bộ, chuẩn hóa và phân nhóm.",
+        "Phân tích tập dữ liệu thực tế thông qua EDA bằng các thư viện Pandas, NumPy và SciPy để phát hiện các mẫu và insight giá trị.",
+        "Áp dụng kỹ thuật thao tác dataframe để tổ chức, tóm tắt và diễn giải phân phối dữ liệu, phân tích tương quan và data pipeline.",
+        "Xây dựng và đánh giá mô hình hồi quy với Scikit-learn, sử dụng mô hình để đưa ra dự báo và hỗ trợ ra quyết định."
+      ]
+    }
+  },
+  {
+    "id": "cert-data-visualization-python",
+    "name": {
+      "en": "Data Visualization with Python",
+      "vi": "Trực quan hóa Dữ liệu với Python"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "91.12%",
+    "credentialId": "0TKAZU1H36W",
+    "url": "https://coursera.org/verify/0TKAZU1H36W",
+    "image": "/certificates/Data Visualization with Python.jpg",
+    "skills": {
+      "en": [
+        "Implement data visualization techniques and plots using Python libraries, such as Matplotlib, Seaborn, and Folium to tell a stimulating story.",
+        "Create different types of charts and plots such as line, area, histograms, bar, pie, box, scatter, and bubble.",
+        "Create advanced visualizations such as waffle charts, word clouds, regression plots, maps with markers, & choropleth maps.",
+        "Generate interactive dashboards containing scatter, line, bar, bubble, pie, and sunburst charts using the Dash framework and Plotly library."
+      ],
+      "vi": [
+        "Áp dụng các kỹ thuật trực quan hóa dữ liệu và vẽ biểu đồ bằng thư viện Python như Matplotlib, Seaborn và Folium.",
+        "Tạo các loại biểu đồ đa dạng: đường, vùng, cột, tròn, hộp, phân tán và biểu đồ bong bóng.",
+        "Tạo trực quan hóa nâng cao: biểu đồ waffle, word cloud, biểu đồ hồi quy, bản đồ với marker & bản đồ choropleth.",
+        "Xây dựng dashboard tương tác với biểu đồ phân tán, đường, cột, tròn và sunburst bằng Dash framework và Plotly."
+      ]
+    }
+  },
+  {
+    "id": "cert-ibm-data-analyst-capstone",
+    "name": {
+      "en": "IBM Data Analyst Capstone Project",
+      "vi": "Dự án Đồ án Tốt nghiệp Data Analyst (IBM Capstone)"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "97%",
+    "credentialId": "SLL12COP14CN",
+    "url": "https://coursera.org/verify/SLL12COP14CN",
+    "image": "/certificates/IBM Data Analyst Capstone Project.jpg",
+    "skills": {
+      "en": [
+        "Apply techniques to gather and wrangle data from multiple sources.",
+        "Analyze data to identify patterns, trends, and insights through exploratory techniques.",
+        "Create visual representations of data using Python libraries to communicate findings effectively.",
+        "Construct interactive dashboards with BI tools to present and explore data dynamically."
+      ],
+      "vi": [
+        "Áp dụng kỹ thuật thu thập và làm sạch/xử lý dữ liệu từ nhiều nguồn khác nhau.",
+        "Phân tích dữ liệu để nhận diện các mẫu, xu hướng và insight bằng các kỹ thuật khám phá dữ liệu.",
+        "Tạo hình ảnh trực quan hóa dữ liệu bằng thư viện Python để truyền tải phát hiện hiệu quả.",
+        "Xây dựng dashboard tương tác với công cụ BI để trình bày và khai phá dữ liệu trực quan."
+      ]
+    }
+  },
+  {
+    "id": "cert-genai-data-analytics",
+    "name": {
+      "en": "Generative AI: Enhance your Data Analytics Career",
+      "vi": "Generative AI: Nâng tầm Sự nghiệp Phân tích Dữ liệu"
+    },
+    "category": "data-science",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "93%",
+    "credentialId": "3GLD00N15HBE",
+    "url": "https://coursera.org/verify/3GLD00N15HBE",
+    "image": "/certificates/Generative AI - Enhance your Data Analytics Career.jpg",
+    "skills": {
+      "en": [
+        "Describe how you can use Generative AI tools and techniques in the context of data analytics across industries.",
+        "Implement various data analytic processes such as data preparation, analysis, visualization and storytelling using Generative AI tools.",
+        "Evaluate real-world case studies showcasing the successful application of Generative AI in deriving meaningful insights.",
+        "Analyze the ethical considerations and challenges associated with using Generative AI in data analytics."
+      ],
+      "vi": [
+        "Mô tả cách ứng dụng các công cụ và kỹ thuật Generative AI trong bối cảnh phân tích dữ liệu ở nhiều ngành nghề.",
+        "Thực hiện các quy trình phân tích dữ liệu như chuẩn bị dữ liệu, phân tích, trực quan hóa và kể chuyện bằng công cụ GenAI.",
+        "Đánh giá các case study thực tế thể hiện việc ứng dụng thành công Generative AI trong việc trích xuất insight giá trị.",
+        "Phân tích các cân nhắc về đạo đức và thách thức khi sử dụng Generative AI trong phân tích dữ liệu."
+      ]
+    }
+  },
+  {
+    "id": "cert-data-analyst-career-guide",
+    "name": {
+      "en": "Data Analyst Career Guide and Interview Preparation",
+      "vi": "Hướng dẫn Sự nghiệp Data Analyst & Chuẩn bị Phỏng vấn"
+    },
+    "category": "data-analysis",
+    "issuer": "IBM",
+    "date": "July 21, 2026",
+    "grade": "93.30%",
+    "credentialId": "B3VK537LT3PK",
+    "url": "https://coursera.org/verify/B3VK537LT3PK",
+    "image": "/certificates/Data Analyst Career Guide and Interview Preparation.jpg",
+    "skills": {
+      "en": [
+        "Describe the role of a data analyst and some career path options as well as the prospective opportunities in the field.",
+        "Explain how to build a foundation for a job search, including researching job listings, writing a resume, and making a portfolio of work.",
+        "Summarize what a candidate can expect during a typical job interview cycle, different types of interviews, and how to prepare.",
+        "Explain how to give an effective interview, including techniques for answering questions and making a professional presentation."
+      ],
+      "vi": [
+        "Hiểu rõ vai trò của Data Analyst, định hướng phát triển sự nghiệp và các cơ hội tiềm năng trong ngành.",
+        "Nắm vững phương pháp xây dựng nền tảng tìm việc: nghiên cứu tin tuyển dụng, viết CV và tạo portfolio cá nhân.",
+        "Tổng quan quy trình phỏng vấn chuẩn, các loại hình phỏng vấn và chiến lược chuẩn bị hiệu quả.",
+        "Kỹ năng phỏng vấn thuyết phục, phương pháp trả lời câu hỏi và trình bày phong thái chuyên nghiệp."
+      ]
+    }
+  },
+  {
+    "id": "cert-sql-advanced-xomdata",
+    "name": {
+      "en": "SQL Advanced",
+      "vi": "SQL Nâng cao"
+    },
+    "category": "data-analysis",
+    "issuer": "Xóm Data Academy",
+    "date": "July 13, 2026",
+    "grade": "Passed",
+    "credentialId": "XA-4HDDNH",
+    "url": "https://xomdata.com/certificates/XA-4HDDNH",
+    "image": "/certificates/SQL Advanced - Xom Data.jpg",
+    "skills": {
+      "en": [
+        "Master complex SQL window functions, CTEs, and advanced data aggregation techniques.",
+        "Optimize query performance, indexing, and complex table join strategies.",
+        "Solve real-world business analytics problems using advanced relational database queries."
+      ],
+      "vi": [
+        "Thành thạo các hàm cửa sổ (Window Functions) phức tạp, CTEs và kỹ thuật gom nhóm dữ liệu nâng cao.",
+        "Tối ưu hóa hiệu năng truy vấn, đánh chỉ mục (indexing) và chiến lược kết hợp bảng (join) phức tạp.",
+        "Giải quyết các bài toán phân tích kinh doanh thực tế bằng các truy vấn cơ sở dữ liệu quan hệ nâng cao."
+      ]
+    }
+  },
+  {
+    "id": "cert-sql-intermediate-xomdata",
+    "name": {
+      "en": "SQL Intermediate",
+      "vi": "SQL Trung cấp"
+    },
+    "category": "data-analysis",
+    "issuer": "Xóm Data Academy",
+    "date": "July 11, 2026",
+    "grade": "Passed",
+    "credentialId": "XA-7LUW2T",
+    "url": "https://xomdata.com/certificates/XA-7LUW2T",
+    "image": "/certificates/SQL Intermediate - Xom Data.jpg",
+    "skills": {
+      "en": [
+        "Write intermediate SQL queries involving multi-table JOINs, GROUP BY, and HAVING clauses.",
+        "Perform subqueries, filtering, conditional aggregation, and data transformations.",
+        "Analyze relational database structures to extract structured metrics for business reporting."
+      ],
+      "vi": [
+        "Viết truy vấn SQL trung cấp gồm JOIN nhiều bảng, câu lệnh GROUP BY và điều kiện HAVING.",
+        "Thực hiện subquery, lọc dữ liệu, gom nhóm có điều kiện và biến đổi dữ liệu.",
+        "Phân tích cấu trúc cơ sở dữ liệu quan hệ để trích xuất chỉ số phục vụ báo cáo kinh doanh."
+      ]
+    }
+  },
+  {
     "id": "cert-databases-sql",
     "name": {
       "en": "Databases and SQL for Data Science with Python",
@@ -37,6 +258,7 @@
     "issuer": "IBM",
     "date": "June 26, 2026",
     "grade": "100%",
+    "credentialId": "AZUPJE163TR1",
     "url": "https://coursera.org/verify/AZUPJE163TR1",
     "image": "/certificates/Databases and SQL for Data Science with Python.jpg",
     "skills": {
@@ -64,6 +286,7 @@
     "issuer": "IBM",
     "date": "June 20, 2026",
     "grade": "100%",
+    "credentialId": "ced0d57041413c3775f93df58483b47b",
     "url": "https://coursera.org/share/ced0d57041413c3775f93df58483b47b",
     "image": "/certificates/Python Project for Data Science.jpg",
     "skills": {
@@ -91,6 +314,7 @@
     "issuer": "IBM",
     "date": "June 19, 2026",
     "grade": "93.75%",
+    "credentialId": "0ZGOJQYXLDY9",
     "url": "https://coursera.org/verify/0ZGOJQYXLDY9",
     "image": "/certificates/Python for Data Science, AI & Development.jpg",
     "skills": {
@@ -118,6 +342,7 @@
     "issuer": "IBM",
     "date": "May 25, 2026",
     "grade": "92.80%",
+    "credentialId": "IICH5JRDRWYI",
     "url": "https://coursera.org/verify/IICH5JRDRWYI",
     "image": "/certificates/Data Visualization.jpg",
     "skills": {
@@ -145,6 +370,7 @@
     "issuer": "IBM",
     "date": "May 22, 2026",
     "grade": "95.86%",
+    "credentialId": "5RVZYK4X8KSD",
     "url": "https://coursera.org/verify/5RVZYK4X8KSD",
     "image": "/certificates/Excel Basics for Data Analysis.jpg",
     "skills": {
@@ -172,6 +398,7 @@
     "issuer": "IBM",
     "date": "May 22, 2026",
     "grade": "95%",
+    "credentialId": "JJU7PTSZBZ8J",
     "url": "https://coursera.org/verify/JJU7PTSZBZ8J",
     "image": "/certificates/Introduction to Data Analytics.jpg",
     "skills": {
@@ -199,6 +426,7 @@
     "issuer": "Đại học Kinh tế TP.HCM (UEH)",
     "date": "August 18, 2025",
     "grade": "Passed",
+    "credentialId": "1811287",
     "url": "https://chungchinganhan.ueh.edu.vn/temp/ChungChi_1811287_20260606_1038.pdf",
     "image": "/certificates/atd_ueh_excel.jpg",
     "skills": {
