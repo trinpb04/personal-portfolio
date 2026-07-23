@@ -27,3 +27,6 @@ dist-ssr
 
 # Raw, UNREDACTED dashboard screenshots (contain confidential client data) — never commit
 raw-dashboards
+
+# Scratch directory
+scratch/
