@@ -443,5 +443,33 @@
         "Hàm tài chính & thống kê"
       ]
     }
+  },
+  {
+    "id": "cert-hackerrank-sql-basic",
+    "name": {
+      "en": "SQL (Basic) Certificate",
+      "vi": "Chứng chỉ SQL (Cơ bản)"
+    },
+    "category": "data-analysis",
+    "issuer": "HackerRank",
+    "date": "July 2026",
+    "grade": "Passed",
+    "credentialId": "72d6b6e596b7",
+    "url": "https://www.hackerrank.com/certificates/72d6b6e596b7",
+    "iframe": "https://www.hackerrank.com/certificates/iframe/72d6b6e596b7",
+    "skills": {
+      "en": [
+        "Relational Database Querying & Filtering",
+        "SQL Joins (INNER, LEFT, RIGHT, FULL)",
+        "Data Aggregation & Grouping (GROUP BY, HAVING)",
+        "Subqueries & Complex Calculations"
+      ],
+      "vi": [
+        "Truy vấn & lọc dữ liệu trong cơ sở dữ liệu quan hệ",
+        "Thành thạo các phép SQL Join (INNER, LEFT, RIGHT, FULL)",
+        "Gộp dữ liệu & Nhóm dữ liệu (GROUP BY, HAVING)",
+        "Truy vấn con (Subquery) & tính toán phức tạp"
+      ]
+    }
   }
 ]

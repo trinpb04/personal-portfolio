@@ -32,8 +32,17 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
       }}
       className="bento-card p-0 flex flex-col overflow-hidden w-[285px] sm:w-[295px] md:w-[305px] shrink-0 h-[515px] shadow-xl border border-card-border hover:border-accent/40 cursor-pointer transition-colors duration-200 select-none"
     >
-      {/* Certificate Image */}
-      {cert.image && (
+      {/* Certificate Image or iframe */}
+      {cert.iframe ? (
+        <div className="w-full h-40 sm:h-44 overflow-hidden border-b border-card-border relative shrink-0 bg-white">
+          <iframe
+            src={cert.iframe}
+            title={cert.name[lang]}
+            className="w-full h-full border-0 pointer-events-none"
+            loading="lazy"
+          />
+        </div>
+      ) : cert.image ? (
         <div className={`w-full h-40 sm:h-44 overflow-hidden border-b border-card-border relative group shrink-0 ${cert.fit === 'contain' ? 'bg-white' : ''}`}>
           <img
             src={cert.image}
@@ -42,7 +51,7 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
             onError={(e) => { e.currentTarget.parentElement.style.display = 'none'; }}
           />
         </div>
-      )}
+      ) : null}
 
       <div className="p-5 flex flex-col flex-1 justify-between overflow-hidden">
         <div>
