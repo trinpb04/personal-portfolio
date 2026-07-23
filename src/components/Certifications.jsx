@@ -43,21 +43,35 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
           />
         </div>
       ) : cert.image ? (
-        <div className={`w-full h-40 sm:h-44 overflow-hidden border-b border-card-border relative group shrink-0 ${cert.fit === 'contain' ? 'bg-white' : ''}`}>
+        <a
+          href={cert.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className={`w-full h-40 sm:h-44 overflow-hidden border-b border-card-border relative group shrink-0 block ${cert.fit === 'contain' ? 'bg-white' : ''}`}
+        >
           <img
             src={cert.image}
             alt={cert.name[lang]}
             className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${cert.fit === 'contain' ? 'object-contain p-3' : 'object-cover'}`}
             onError={(e) => { e.currentTarget.parentElement.style.display = 'none'; }}
           />
-        </div>
+        </a>
       ) : null}
 
       <div className="p-5 flex flex-col flex-1 justify-between overflow-hidden">
         <div>
           <div className="flex justify-between items-start mb-2.5 gap-2">
             <div>
-              <h3 className="text-base font-bold text-primary mb-1 leading-snug">{cert.name[lang]}</h3>
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="hover:text-accent transition-colors"
+              >
+                <h3 className="text-base font-bold text-primary hover:text-accent mb-1 leading-snug">{cert.name[lang]}</h3>
+              </a>
               <p className="text-accent text-xs font-medium mb-2">{cert.issuer}</p>
             </div>
             <a
