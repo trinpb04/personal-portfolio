@@ -84,7 +84,7 @@ export const translations = {
           role: 'Business Analyst',
           company: 'ON25 Corporation',
           period: 'October 2025 - Present',
-          keyStat: 'Reduced reporting turnaround time by 25%',
+          keyStat: 'Supported a 37% MoM increase in commission revenue',
           highlights: [
             'Supported a 37% month-on-month increase in commission revenue (Jan) by analysing sales performance to reallocate livestream schedules, host assignments and KOL spend toward the highest-yield slots.',
             'Improved margin by modelling commission rate, NMV/GMV conversion and NMC per order across time slots, shifting the live calendar toward periods with the strongest revenue per session.',
@@ -274,7 +274,7 @@ export const translations = {
           role: 'Business Analyst',
           company: 'ON25 Corporation',
           period: 'Tháng 10/2025 - Hiện tại',
-          keyStat: 'Giảm 25% thời gian xử lý báo cáo',
+          keyStat: 'Thúc đẩy doanh thu hoa hồng tăng 37% (MoM)',
           highlights: [
             'Thúc đẩy doanh thu hoa hồng tăng 37% (MoM) bằng cách phân tích hiệu suất bán hàng để phân bổ lại lịch livestream, nhân sự live và chi phí KOL vào các khung giờ đạt hiệu quả cao nhất.',
             'Cải thiện biên lợi nhuận thông qua mô hình hóa tỷ lệ hoa hồng, tỷ lệ chuyển đổi NMV/GMV và NMC trên mỗi đơn hàng theo từng khung giờ, giúp tối ưu hóa lịch livestream vào các khoảng thời gian mang lại doanh thu cao nhất.',
