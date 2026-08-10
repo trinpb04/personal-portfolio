@@ -86,10 +86,11 @@ export const translations = {
           period: 'October 2025 - Present',
           keyStat: 'Reduced reporting turnaround time by 25%',
           highlights: [
-            'Building and maintaining integrated financial models to drive annual budgeting, monthly rolling forecasts, and scenario-based planning.',
-            'Executing variance and gap analysis to identify key business drivers and evaluating ROI for strategic investments.',
-            'Streamlined management reporting using Python, Power BI, and Advanced Excel, reducing reporting turnaround time by 25% and enhancing data integrity.',
-            'Working directly with the CEO and other departments to translate complex financial metrics into actionable business insights.',
+            'Supported a 37% month-on-month increase in commission revenue (Jan) by analysing sales performance to reallocate livestream schedules, host assignments and KOL spend toward the highest-yield slots.',
+            'Improved margin by modelling commission rate, NMV/GMV conversion and NMC per order across time slots, shifting the live calendar toward periods with the strongest revenue per session.',
+            'Streamlined management reporting using Python, Power Bi and Advanced Excel, processing 2M+ rows per cycle and cutting reporting turnaround time by 25% while improving data integrity.',
+            'Led data audit initiatives that improved data reliability across departments, standardising metric definitions and reconciling sources feeding the reporting layer.',
+            'Built and maintained integrated financial models for annual budgeting, monthly rolling forecasts and scenario-based planning, working directly with the CEO.',
           ],
         },
         {
@@ -275,10 +276,11 @@ export const translations = {
           period: 'Tháng 10/2025 - Hiện tại',
           keyStat: 'Giảm 25% thời gian xử lý báo cáo',
           highlights: [
-            'Xây dựng và duy trì các mô hình tài chính tích hợp phục vụ lập ngân sách năm, rolling forecast hàng tháng và lập kế hoạch theo kịch bản.',
-            'Thực hiện phân tích biến động (variance) và phân tích khoảng cách (gap) để xác định các yếu tố thúc đẩy kinh doanh trọng yếu, đánh giá ROI cho các khoản đầu tư chiến lược.',
-            'Tinh gọn hệ thống báo cáo quản trị bằng Python, Power BI và Excel nâng cao, giảm 25% thời gian xử lý và nâng cao tính toàn vẹn dữ liệu.',
-            'Làm việc trực tiếp với CEO và các phòng ban để chuyển hóa các chỉ số tài chính phức tạp thành insight kinh doanh khả thi.',
+            'Thúc đẩy doanh thu hoa hồng tăng 37% (MoM) bằng cách phân tích hiệu suất bán hàng để phân bổ lại lịch livestream, nhân sự live và chi phí KOL vào các khung giờ đạt hiệu quả cao nhất.',
+            'Cải thiện biên lợi nhuận thông qua mô hình hóa tỷ lệ hoa hồng, tỷ lệ chuyển đổi NMV/GMV và NMC trên mỗi đơn hàng theo từng khung giờ, giúp tối ưu hóa lịch livestream vào các khoảng thời gian mang lại doanh thu cao nhất.',
+            'Tinh gọn hệ thống báo cáo quản trị bằng Python, Power BI và Excel nâng cao, xử lý hơn 2 triệu dòng dữ liệu mỗi chu kỳ và giảm 25% thời gian lập báo cáo, đồng thời nâng cao tính toàn vẹn của dữ liệu.',
+            'Dẫn dắt các sáng kiến kiểm toán dữ liệu nhằm cải thiện độ tin cậy của dữ liệu giữa các phòng ban, chuẩn hóa định nghĩa chỉ số và đối soát các nguồn cấp dữ liệu cho lớp báo cáo.',
+            'Xây dựng và duy trì các mô hình tài chính tích hợp phục vụ lập ngân sách năm, dự báo cuốn chiếu hàng tháng và lập kế hoạch theo kịch bản, làm việc trực tiếp với CEO.',
           ],
         },
         {
