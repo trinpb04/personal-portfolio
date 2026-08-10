@@ -35,7 +35,7 @@ export const translations = {
       metrics: [
         { value: 25, suffix: '%', label: 'Faster reporting turnaround', sub: 'via Python + Power BI automation' },
         { value: 5, suffix: 'M+', label: 'Sales data rows processed', sub: 'Shopee affiliate dataset' },
-        { value: 10, suffix: '%', label: 'Profit uplift driven', sub: 'via conversion rate & avg. commission analysis' },
+        { value: 37, suffix: '%', label: 'MoM commission increase', sub: 'via livestream & KOL spend optimization' },
         { value: 16, suffix: '', label: 'Data Certifications', sub: 'IBM Data Analytics + dbt Labs' },
       ],
       chartTitle: 'Reporting Turnaround (hours / cycle)',
@@ -81,7 +81,7 @@ export const translations = {
       title: 'Career Journey',
       items: [
         {
-          role: 'Business Planning and Analysis',
+          role: 'Business Analyst',
           company: 'ON25 Corporation',
           period: 'October 2025 - Present',
           keyStat: 'Reduced reporting turnaround time by 25%',
@@ -115,7 +115,7 @@ export const translations = {
         {
           company: 'ON25 Corporation',
           title: 'Affiliate Sales & Category Performance',
-          desc: 'Sales analytics over 5M+ Shopee affiliate rows — tracking GMV, commission (CMS) efficiency, and category/SKU performance to surface the highest-margin drivers behind a 10% profit uplift.',
+          desc: 'Sales analytics over 5M+ Shopee affiliate rows — analyzing sales performance, host assignments and KOL spend to reallocate livestream schedules, driving a 37% MoM increase in commission revenue.',
           tags: ['Power BI', 'DAX', 'Sales Analytics'],
         },
         {
@@ -224,7 +224,7 @@ export const translations = {
       metrics: [
         { value: 25, suffix: '%', label: 'Rút ngắn thời gian báo cáo', sub: 'nhờ tự động hóa Python + Power BI' },
         { value: 5, suffix: 'M+', label: 'Dòng dữ liệu bán hàng xử lý', sub: 'Dữ liệu affiliate Shopee' },
-        { value: 10, suffix: '%', label: 'Tăng lợi nhuận đóng góp', sub: 'qua phân tích conversion rate & % hoa hồng TB' },
+        { value: 37, suffix: '%', label: 'Tăng doanh thu hoa hồng (MoM)', sub: 'nhờ tối ưu lịch livestream & chi phí KOL' },
         { value: 16, suffix: '', label: 'Chứng chỉ Data', sub: 'IBM Data Analytics + dbt Labs' },
       ],
       chartTitle: 'Thời gian hoàn thành báo cáo (giờ / kỳ)',
@@ -270,7 +270,7 @@ export const translations = {
       title: 'Hành Trình Sự Nghiệp',
       items: [
         {
-          role: 'Hoạch định & Phân tích Kinh doanh (BP&A)',
+          role: 'Business Analyst',
           company: 'ON25 Corporation',
           period: 'Tháng 10/2025 - Hiện tại',
           keyStat: 'Giảm 25% thời gian xử lý báo cáo',
@@ -304,7 +304,7 @@ export const translations = {
         {
           company: 'ON25 Corporation',
           title: 'Hiệu quả Bán hàng Affiliate & Ngành hàng',
-          desc: 'Phân tích bán hàng trên 5M+ dòng dữ liệu affiliate Shopee — theo dõi GMV, hiệu quả hoa hồng (CMS) và hiệu suất theo ngành hàng/SKU để tìm ra các yếu tố biên lợi nhuận cao đứng sau mức tăng 10% lợi nhuận.',
+          desc: 'Phân tích bán hàng trên 5M+ dòng dữ liệu affiliate Shopee — phân tích hiệu quả bán hàng, nhân sự live và chi phí KOL để tối ưu hóa lịch livestream, thúc đẩy doanh thu hoa hồng tăng 37% (MoM).',
           tags: ['Power BI', 'DAX', 'Sales Analytics'],
         },
         {

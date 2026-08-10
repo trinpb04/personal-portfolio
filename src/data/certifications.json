@@ -71,7 +71,7 @@
     "image": "/certificates/Data Analysis with Python.jpg",
     "skills": {
       "en": [
-        "Construct Python programs to clean and prepare data for analysis by addressing missing values, formatting inconsistencies, normalization, and binning.",
+        "Construct Python programs to clean and pgitrepare data for analysis by addressing missing values, formatting inconsistencies, normalization, and binning.",
         "Analyze real-world datasets through exploratory data analysis (EDA) using libraries such as Pandas, NumPy, and SciPy to uncover patterns and insights.",
         "Apply data operation techniques using dataframes to organize, summarize, and interpret data distributions, correlation analysis, and data pipelines.",
         "Develop and evaluate regression models using Scikit-learn, and use these models to generate predictions and support data-driven decision-making."
