@@ -94,7 +94,7 @@ export const translations = {
           ],
         },
         {
-          role: 'Trainee Corporate Client Relationship Officer',
+          role: 'Trainee Relationship Manager',
           company: 'Military Commercial Joint Stock Bank (MB Bank)',
           period: 'August 2024 - May 2025',
           keyStat: 'Financial Statement Analysis & Credit Decisions',
