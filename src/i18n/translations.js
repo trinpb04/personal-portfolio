@@ -286,7 +286,7 @@ export const translations = {
         {
           role: 'Chuyên viên Khách hàng Doanh nghiệp tập sự',
           company: 'Ngân hàng TMCP Quân đội (MB Bank)',
-          period: 'Tháng 08/2024 - Tháng 05/2025',
+          period: 'Tháng 08/2024 - Tháng 08/2025',
           keyStat: 'Phân tích BCTC & Hỗ trợ quyết định tín dụng',
           highlights: [
             'Phân tích chi tiết báo cáo tài chính để đánh giá khả năng sinh lời, thanh khoản và cơ cấu vốn của khách hàng, hỗ trợ các quyết định tín dụng dựa trên dữ liệu.',
