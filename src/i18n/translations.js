@@ -96,7 +96,7 @@ export const translations = {
         {
           role: 'Trainee Relationship Manager',
           company: 'Military Commercial Joint Stock Bank (MB Bank)',
-          period: 'August 2024 - May 2025',
+          period: 'August 2024 - August 2025',
           keyStat: 'Financial Statement Analysis & Credit Decisions',
           highlights: [
             "Performed detailed financial statement analysis to assess clients' profitability, liquidity, and capital structure to support data-driven credit decisions.",
