@@ -30,7 +30,7 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
         opacity: cardOpacity,
         scale: cardScale,
       }}
-      className="bento-card p-0 flex flex-col overflow-hidden w-[285px] sm:w-[295px] md:w-[305px] shrink-0 h-[515px] shadow-xl border border-card-border hover:border-accent/40 cursor-pointer transition-colors duration-200 select-none"
+      className="bento-card !p-0 flex flex-col overflow-hidden w-[285px] sm:w-[295px] md:w-[305px] shrink-0 h-[515px] cursor-pointer select-none"
     >
       {/* Certificate Image or iframe */}
       {cert.iframe ? (
@@ -79,7 +79,7 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="p-1.5 bg-bg border border-card-border rounded-lg hover:border-accent hover:text-accent transition-colors shrink-0"
+              className="p-1.5 bg-[var(--surface-low)] border border-card-border rounded-lg text-[var(--secondary)] hover:border-accent hover:text-accent transition-colors shrink-0"
               aria-label={t.certifications.verify}
             >
               <ExternalLink size={18} />
@@ -87,8 +87,8 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
           </div>
 
           <div className="flex flex-wrap gap-1.5 text-[11px] font-mono mb-3">
-            <span className="px-2 py-0.5 rounded-full bg-bg border border-card-border text-text-secondary">{cert.date}</span>
-            <span className="px-2 py-0.5 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold">{cert.grade}</span>
+            <span className="tag tag-muted !text-[10px] !px-2.5 !py-0.5">{cert.date}</span>
+            <span className="tag tag-gold !text-[10px] !px-2.5 !py-0.5">{cert.grade}</span>
           </div>
 
           <div className="pt-2.5 border-t border-card-border">
@@ -96,7 +96,7 @@ function CertCardItem({ cert, itemIdx, step, peekingOffset, x, lang, t, onClick 
             <ul className="grid grid-cols-1 gap-1.5">
               {cert.skills[lang].map((skill, i) => (
                 <li key={i} className="flex items-start gap-1.5 text-[11px] text-text-secondary">
-                  <CheckCircle2 size={13} className="text-green-500 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={13} className="text-accent mt-0.5 shrink-0" />
                   <span className="line-clamp-2 leading-tight">{skill}</span>
                 </li>
               ))}
@@ -203,30 +203,31 @@ export default function Certifications() {
   };
 
   return (
-    <section id="certifications" className="py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certifications" className="py-24 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         
         {/* Header & Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center gap-3">
+            <h2 className="section-title text-primary mb-4 flex items-center gap-3">
               <Award className="text-accent" size={32} />
               {t.certifications.title}
             </h2>
-            <div className="h-1 w-20 bg-accent rounded-full mb-4"></div>
+            <div className="section-bar mb-4"></div>
             {/* Category Slicers */}
             <div className="flex flex-wrap gap-2.5">
               {categoryKeys.map((key) => (
                 <button
                   key={key}
                   onClick={() => handleCategoryChange(key)}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer ${
-                    activeCategory === key
-                      ? 'bg-accent/20 text-accent border border-accent/50 shadow-sm'
-                      : 'bg-card border border-card-border text-text-secondary hover:border-accent/50 hover:text-primary'
-                  }`}
+                  className={`filter-pill ${activeCategory === key ? 'filter-pill-active' : ''}`}
                 >
-                  {key === 'all' ? t.certifications.all : catLabel(key)}
+                  <span>{key === 'all' ? t.certifications.all : catLabel(key)}</span>
+                  <span className="filter-count">
+                    {key === 'all'
+                      ? certData.length
+                      : certData.filter((c) => c.category === key).length}
+                  </span>
                 </button>
               ))}
             </div>
@@ -240,14 +241,14 @@ export default function Certifications() {
               </span>
               <button
                 onClick={handlePrev}
-                className="p-2.5 rounded-full bg-card border border-card-border text-primary hover:border-accent hover:text-accent hover:bg-accent/20 transition-all shadow-md active:scale-95 cursor-pointer"
+                className="p-2.5 rounded-full bg-card border border-card-border text-primary hover:border-accent hover:text-accent hover:bg-accent/15 transition-all shadow-md active:scale-95 cursor-pointer"
                 aria-label="Previous Certificate"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={handleNext}
-                className="p-2.5 rounded-full bg-card border border-card-border text-primary hover:border-accent hover:text-accent hover:bg-accent/20 transition-all shadow-md active:scale-95 cursor-pointer"
+                className="p-2.5 rounded-full bg-card border border-card-border text-primary hover:border-accent hover:text-accent hover:bg-accent/15 transition-all shadow-md active:scale-95 cursor-pointer"
                 aria-label="Next Certificate"
               >
                 <ChevronRight size={20} />

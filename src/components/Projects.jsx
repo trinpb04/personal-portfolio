@@ -61,13 +61,13 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" className="py-20 bg-card/30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-24 bg-[var(--surface-low)]/40">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="section-title text-primary mb-4">
             {t.projects.title}
           </h2>
-          <div className="h-1 w-20 bg-accent rounded-full"></div>
+          <div className="section-bar"></div>
         </div>
 
         {/* Category Slicers */}
@@ -76,13 +76,14 @@ export default function Projects() {
             <button
               key={key}
               onClick={() => handleCategoryChange(key)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeCategory === key
-                  ? 'bg-accent/20 text-accent border border-accent/50'
-                  : 'bg-card border border-card-border text-text-secondary hover:border-accent/50 hover:text-primary'
-              }`}
+              className={`filter-pill ${activeCategory === key ? 'filter-pill-active' : ''}`}
             >
-              {key === 'All' ? t.projects.all : catLabel(key)}
+              <span>{key === 'All' ? t.projects.all : catLabel(key)}</span>
+              <span className="filter-count">
+                {key === 'All'
+                  ? projectData.length
+                  : projectData.filter((p) => p.categoryKey === key).length}
+              </span>
             </button>
           ))}
         </div>
@@ -102,7 +103,7 @@ export default function Projects() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-card border border-card-border rounded-xl p-6 flex flex-col hover:border-accent/50 transition-colors group"
+                  className="bento-card equal-panel group"
                 >
                   {/* Header: Icon + (repo stats OR academic badge) */}
                   <div className="flex items-center justify-between mb-4">
@@ -119,7 +120,7 @@ export default function Projects() {
                         </div>
                       </div>
                     ) : (
-                      <span className="flex items-center gap-1 text-xs font-mono px-2 py-1 rounded-full bg-bg border border-card-border text-text-secondary">
+                      <span className="tag tag-muted">
                         <GraduationCap size={13} /> {t.projects.academicBadge}
                       </span>
                     )}
@@ -165,7 +166,7 @@ export default function Projects() {
                         className="w-full h-full object-cover transition-transform duration-300 group-hover/dash:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/dash:opacity-100 transition-opacity flex items-center justify-center">
-                        <span className="flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-xl transform translate-y-4 group-hover/dash:translate-y-0 transition-transform">
+                        <span className="flex items-center gap-2 bg-accent text-[var(--on-accent)] px-5 py-2.5 rounded-full font-bold text-sm shadow-xl transform translate-y-4 group-hover/dash:translate-y-0 transition-transform">
                           <ExternalLink size={16} /> {t.projects?.viewDashboard || "View Dashboard"}
                         </span>
                       </div>
@@ -178,11 +179,11 @@ export default function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/btn inline-flex items-center gap-2 px-4 py-2.5 mb-4 w-fit rounded-lg bg-accent text-white font-bold text-sm shadow-sm hover:bg-accent/90 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                      className="group/btn inline-flex items-center gap-2 px-4 py-2.5 mb-4 w-fit rounded-full bg-accent text-[var(--on-accent)] font-bold text-sm shadow-sm hover:bg-[var(--accent-hover)] hover:shadow-md hover:-translate-y-0.5 transition-all"
                     >
                       <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full rounded-full bg-white/70 opacity-75 animate-ping"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-current opacity-60 animate-ping"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-current"></span>
                       </span>
                       <Rocket size={16} /> {t.projects.liveDemo}
                       <ExternalLink size={14} className="opacity-70 group-hover/btn:translate-x-0.5 transition-transform" />
@@ -204,13 +205,13 @@ export default function Projects() {
                   {/* Tech Stack */}
                   <div className="mt-auto">
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-mono text-text-secondary">&lt;/&gt; {t.projects.techStackLabel}</span>
+                      <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-text-secondary">&lt;/&gt; {t.projects.techStackLabel}</span>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, i) => (
                         <span
                           key={i}
-                          className={`px-3 py-1 rounded-md text-xs font-medium border border-card-border ${tech.bg} ${tech.color}`}
+                          className={`px-2.5 py-1 rounded-md text-[11px] font-semibold border border-card-border ${tech.bg} ${tech.color}`}
                         >
                           {tech.name}
                         </span>
@@ -253,7 +254,7 @@ export default function Projects() {
           <p className="text-xs text-text-secondary font-mono mb-4">@{GITHUB_USERNAME} — {t.projects.githubSub}</p>
           <div className="overflow-x-auto">
             <img
-              src={`https://ghchart.rshah.org/10B981/${GITHUB_USERNAME}`}
+              src={`https://ghchart.rshah.org/00D27F/${GITHUB_USERNAME}`}
               alt={`${GITHUB_USERNAME} GitHub contribution graph`}
               className="min-w-[640px] w-full"
               loading="lazy"

@@ -47,15 +47,15 @@ export default function ImpactMetrics() {
   ];
 
   return (
-    <section id="impact" className="py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="impact" className="py-24">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="mb-12">
           <h2 className="text-accent text-sm font-bold tracking-widest uppercase mb-3 font-mono flex items-center gap-2">
             <Gauge size={16} /> {m.eyebrow}
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-primary mb-3">{m.title}</h3>
+          <h3 className="section-title text-primary mb-3">{m.title}</h3>
           <p className="text-text-secondary max-w-2xl">{m.subtitle}</p>
-          <div className="h-1 w-20 bg-accent rounded-full mt-4"></div>
+          <div className="section-bar mt-4"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -68,7 +68,7 @@ export default function ImpactMetrics() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.4 }}
-                className="bento-card flex flex-col justify-between"
+                className="bento-card equal-panel justify-between"
               >
                 <p className="text-4xl md:text-5xl text-accent mb-3">
                   <AnimatedCounter value={metric.value} suffix={metric.suffix} />
@@ -87,7 +87,7 @@ export default function ImpactMetrics() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bento-card flex flex-col"
+            className="bento-card equal-panel"
           >
             <div className="flex items-center gap-2 mb-4">
               <BarChart3 className="text-accent" size={18} />

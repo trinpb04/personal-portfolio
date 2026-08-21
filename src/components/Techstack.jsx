@@ -34,14 +34,14 @@ export default function Techstack() {
   const radarData = t.techstack.radarAxes.map((axis, i) => ({ axis, value: radarValues[i] }));
 
   return (
-    <section id="techstack" className="py-20 relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="techstack" className="py-24 relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center gap-3">
+          <h2 className="section-title text-primary mb-4 flex items-center gap-3">
             <TrendingUp className="text-accent" size={32} />
             {t.techstack.title}
           </h2>
-          <div className="h-1 w-20 bg-accent rounded-full"></div>
+          <div className="section-bar"></div>
         </div>
 
         <motion.div
@@ -52,7 +52,7 @@ export default function Techstack() {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {/* Card 1: Business Analysis */}
-          <motion.div variants={item} className="bento-card md:col-span-2 group relative overflow-hidden bg-gradient-to-br from-card to-bg border border-card-border">
+          <motion.div variants={item} className="bento-card equal-panel md:col-span-2 group relative overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
               <BriefcaseBusiness size={120} />
             </div>
@@ -75,9 +75,9 @@ export default function Techstack() {
           </motion.div>
 
           {/* Card 2: Education */}
-          <motion.div variants={item} className="bento-card group flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-card to-blue-500/5 border border-card-border">
+          <motion.div variants={item} className="bento-card equal-panel group justify-between relative overflow-hidden">
             <div className="relative z-10">
-              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500 mb-4">
+              <div className="w-12 h-12 rounded-lg bg-accent/12 flex items-center justify-center text-accent mb-4">
                 <GraduationCap size={24} />
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{t.techstack.eduTitle}</h3>
@@ -87,11 +87,11 @@ export default function Techstack() {
           </motion.div>
 
           {/* Card 3: Data Analytics — Radar chart + detailed skills */}
-          <motion.div variants={item} className="bento-card md:col-span-3 overflow-hidden bg-card border border-card-border">
+          <motion.div variants={item} className="bento-card md:col-span-3 overflow-hidden">
             <div className="flex flex-col md:flex-row gap-8">
               {/* Left: intro + radar */}
               <div className="md:w-1/2 flex flex-col">
-                <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-500 mb-4">
+                <div className="w-12 h-12 rounded-lg bg-[color-mix(in_srgb,var(--secondary)_14%,transparent)] flex items-center justify-center text-[var(--secondary)] mb-4">
                   <Binary size={24} />
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-2">{t.techstack.dataTitle}</h3>

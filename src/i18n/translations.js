@@ -20,6 +20,7 @@ export const translations = {
 
     about: {
       eyebrow: 'Data Analyst · Applied Finance & Fintech',
+      statusBadge: 'Open to Data Analyst roles · 20 certifications',
       bio: 'Data Analyst with a domain background in Applied Finance & Fintech. I turn large, messy datasets into clear, actionable insights — building dashboards, automating reporting, and applying SQL, Python and Power BI to support data-driven decisions.',
       exploreWork: 'EXPLORE WORK',
       sourceCode: 'Source Code',
@@ -36,7 +37,7 @@ export const translations = {
         { value: 25, suffix: '%', label: 'Faster reporting turnaround', sub: 'via Python + Power BI automation' },
         { value: 5, suffix: 'M+', label: 'Sales data rows processed', sub: 'Shopee affiliate dataset' },
         { value: 37, suffix: '%', label: 'MoM commission increase', sub: 'via livestream & KOL spend optimization' },
-        { value: 16, suffix: '', label: 'Data Certifications', sub: 'IBM Data Analytics + dbt Labs' },
+        { value: 20, suffix: '', label: 'Data Certifications', sub: 'IBM, dbt Labs, DataCamp, HackerRank' },
       ],
       chartTitle: 'Reporting Turnaround (hours / cycle)',
       chartBefore: 'Before',
@@ -210,6 +211,7 @@ export const translations = {
 
     about: {
       eyebrow: 'Data Analyst · Tài chính Ứng dụng & Fintech',
+      statusBadge: 'Sẵn sàng cho vị trí Data Analyst · 20 chứng chỉ',
       bio: 'Data Analyst với nền tảng domain Tài chính Ứng dụng & Fintech. Mình biến những tập dữ liệu lớn và phức tạp thành insight rõ ràng, khả thi — xây dựng dashboard, tự động hóa báo cáo và ứng dụng SQL, Python, Power BI để hỗ trợ ra quyết định dựa trên dữ liệu.',
       exploreWork: 'XEM DỰ ÁN',
       sourceCode: 'Mã nguồn',
@@ -226,7 +228,7 @@ export const translations = {
         { value: 25, suffix: '%', label: 'Rút ngắn thời gian báo cáo', sub: 'nhờ tự động hóa Python + Power BI' },
         { value: 5, suffix: 'M+', label: 'Dòng dữ liệu bán hàng xử lý', sub: 'Dữ liệu affiliate Shopee' },
         { value: 37, suffix: '%', label: 'Tăng doanh thu hoa hồng (MoM)', sub: 'nhờ tối ưu lịch livestream & chi phí KOL' },
-        { value: 16, suffix: '', label: 'Chứng chỉ Data', sub: 'IBM Data Analytics + dbt Labs' },
+        { value: 20, suffix: '', label: 'Chứng chỉ Data', sub: 'IBM, dbt Labs, DataCamp, HackerRank' },
       ],
       chartTitle: 'Thời gian hoàn thành báo cáo (giờ / kỳ)',
       chartBefore: 'Trước',

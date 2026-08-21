@@ -75,7 +75,7 @@ export default function Pagination({
               onClick={() => handlePageSelect(page)}
               className={`w-8 h-8 flex items-center justify-center rounded-md text-sm font-medium transition-colors ${
                 currentPage === page
-                  ? 'bg-accent text-white'
+                  ? 'bg-accent text-[var(--on-accent)]'
                   : 'hover:bg-card border border-transparent hover:border-card-border text-text-secondary hover:text-primary'
               }`}
             >

@@ -6,10 +6,10 @@ export function Contact() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24">
+      <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center justify-center gap-3">
+          <h2 className="section-title text-primary mb-4 flex items-center justify-center gap-3">
             <Send className="text-accent" size={32} />
             {t.contact.title}
           </h2>
@@ -18,7 +18,7 @@ export function Contact() {
 
         <div className="bento-card max-w-2xl mx-auto">
           <div className="space-y-6">
-            <div className="flex items-center gap-4 p-4 bg-bg rounded-xl border border-card-border hover:border-accent transition-colors">
+            <div className="flex items-center gap-4 p-4 bg-[var(--surface-low)] rounded-2xl border border-card-border hover:border-accent transition-colors">
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent">
                 <Mail size={24} />
               </div>
@@ -30,20 +30,20 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 bg-bg rounded-xl border border-card-border hover:border-accent transition-colors">
-              <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-500">
+            <div className="flex items-center gap-4 p-4 bg-[var(--surface-low)] rounded-2xl border border-card-border hover:border-accent transition-colors">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent">
                 <Phone size={24} />
               </div>
               <div>
                 <p className="text-sm text-text-secondary font-medium">{t.contact.phoneLabel}</p>
-                <a href="tel:+84938113132" className="text-primary font-medium hover:text-green-500 transition-colors">
+                <a href="tel:+84938113132" className="text-primary font-medium hover:text-accent transition-colors">
                   (+84) 938 113 132
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 bg-bg rounded-xl border border-card-border hover:border-accent transition-colors">
-              <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500">
+            <div className="flex items-center gap-4 p-4 bg-[var(--surface-low)] rounded-2xl border border-card-border hover:border-accent transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[color-mix(in_srgb,var(--secondary)_14%,transparent)] flex items-center justify-center text-[var(--secondary)]">
                 <MapPin size={24} />
               </div>
               <div>
@@ -86,7 +86,7 @@ export function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-3 bg-accent text-white rounded-full shadow-lg shadow-accent/20 hover:bg-accent/90 hover:scale-110 transition-all duration-300"
+          className="p-3.5 rounded-full bg-accent text-[var(--on-accent)] shadow-lg shadow-accent/30 hover:bg-[var(--accent-hover)] hover:scale-110 transition-all duration-300"
           aria-label="Scroll to top"
         >
           <ArrowUp size={24} />

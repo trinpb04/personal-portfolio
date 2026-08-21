@@ -25,11 +25,11 @@ export default function ScrollToTop() {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-3 bg-accent text-white rounded-full shadow-lg shadow-accent/20 hover:bg-accent/90 hover:scale-110 transition-all duration-300"
+          className="p-3.5 rounded-full bg-accent text-[var(--on-accent)] shadow-lg shadow-accent/30 hover:bg-[var(--accent-hover)] hover:scale-110 transition-all duration-300"
           aria-label="Scroll to top"
         >
           <ArrowUp size={24} />

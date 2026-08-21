@@ -11,6 +11,7 @@ import { Contact } from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import { useLanguage } from './i18n/LanguageContext';
 import SiteBackground from './components/effects/SiteBackground';
+import ScrollProgress from './components/effects/ScrollProgress';
 import ClickSpark from './components/effects/ClickSpark';
 import CardGlow from './components/effects/CardGlow';
 import LogoLoop from './components/effects/LogoLoop';
@@ -34,18 +35,20 @@ function App() {
       document.documentElement.classList.remove('dark');
     }
     localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
   return (
     <div className="min-h-screen bg-transparent text-text-primary transition-colors duration-300 overflow-x-hidden">
-      <SiteBackground theme={theme} />
+      <SiteBackground />
+      <ScrollProgress />
       <ClickSpark />
       <CardGlow />
       <Navbar theme={theme} setTheme={setTheme} />
 
       <main>
-        <AboutMe theme={theme} />
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-y border-card-border">
+        <AboutMe />
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-6 border-y border-card-border">
           <LogoLoop />
         </div>
         <ImpactMetrics />
@@ -57,7 +60,7 @@ function App() {
         <Contact />
       </main>
 
-      <footer className="py-8 text-center border-t border-card-border mt-12">
+      <footer className="py-10 text-center border-t border-card-border mt-12">
         <p className="text-text-secondary text-sm">
           © {new Date().getFullYear()} Nguyen Phuoc Bao Tri. {t.footer.rights}
         </p>

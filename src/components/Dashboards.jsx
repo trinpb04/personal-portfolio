@@ -26,15 +26,15 @@ export default function Dashboards() {
   );
 
   return (
-    <section id="dashboards" className="py-20 bg-card/30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="dashboards" className="py-24 bg-[var(--surface-low)]/40">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center gap-3">
+          <h2 className="section-title text-primary mb-4 flex items-center gap-3">
             <LayoutDashboard className="text-accent" size={32} />
             {t.dashboards.title}
           </h2>
           <p className="text-text-secondary max-w-2xl">{t.dashboards.subtitle}</p>
-          <div className="h-1 w-20 bg-accent rounded-full mt-4"></div>
+          <div className="section-bar mt-4"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -48,7 +48,7 @@ export default function Dashboards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="bento-card p-0 overflow-hidden flex flex-col"
+              className="bento-card !p-0 overflow-hidden flex flex-col"
             >
               {/* Dashboard image (click to open full size or url) */}
               <a
@@ -76,7 +76,7 @@ export default function Dashboards() {
                   </span>
                 )}
                 {/* Hover hint */}
-                <span className="absolute bottom-3 right-3 flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full bg-accent text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="absolute bottom-3 right-3 flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full bg-accent text-[var(--on-accent)] opacity-0 group-hover:opacity-100 transition-opacity">
                   <Maximize2 size={13} /> {item.url ? 'View Dashboard' : 'View full'}
                 </span>
               </a>
