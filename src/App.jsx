@@ -19,10 +19,11 @@ import LogoLoop from './components/effects/LogoLoop';
 function App() {
   const { t } = useLanguage();
 
-  // Theme state: remembers the user's last choice (default dark).
+  // Theme state: dark by default, remembers the user's last explicit choice.
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') return 'dark';
-    return localStorage.getItem('theme') || 'dark';
+    const saved = localStorage.getItem('theme');
+    return saved === 'light' || saved === 'dark' ? saved : 'dark';
   });
 
   // Apply theme class to <html> and persist.
